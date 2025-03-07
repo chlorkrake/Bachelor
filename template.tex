@@ -1,0 +1,300 @@
+
+
+
+
+
+
+\documentclass[10pt, a4paper, titlepage]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{textcomp}
+\usepackage{microtype}
+\usepackage[english]{babel}
+\usepackage{csquotes}
+% Bibliographie -----------------------------------------
+\usepackage[backend=biber,
+			style=alphabetic,
+			isbn=false,
+			doi=false
+			]{biblatex}
+\addbibresource{./content/references.bib}
+
+% Typographie -------------------------------------------
+\renewcommand{\theenumi}{(\roman{enumi})}
+\usepackage{graphicx}
+\usepackage{setspace}
+% -------------------------------------------------------
+
+% Mathe Pakete, Einstellungen und Commands --------------
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{euscript}
+\numberwithin{equation}{section}
+
+
+% Theorem-Umgebungen ------------------------------------
+\usepackage{thmtools}
+
+\declaretheorem[
+	name=Theorem,
+	numberwithin=section
+	]{theorem}
+\declaretheorem[
+	name=Lemma,
+	sibling=theorem,
+	]{lemma}
+\declaretheorem[
+	name=Proposition,
+	sibling=theorem,
+	]{prop}
+\declaretheorem[
+	name=Corollary,
+	sibling=theorem,
+	]{corollary}
+
+\declaretheorem[
+	name=Definition,
+	style=definition,
+	numbered=no,
+	]{definition}
+
+\declaretheorem[
+	name=Remark,
+	style=remark,
+	numbered=no
+	]{remark}	
+\declaretheorem[
+	name=Example,
+	style=remark,
+	numbered=no
+	]{exam}
+
+
+% Hyperref (immer am Schluss der Präambel!) -------------
+\usepackage[pdftex,pdfpagelabels]{hyperref}
+\hypersetup{pdftitle={Beweis des Satz von Thales},
+			pdfauthor={Maxime Musterfrau}}
+% -------------------------------------------------------
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Beginn des Dokuments
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+% Titelei -----------------------------------------------
+\hypersetup{pageanchor=false}
+\input{./content/titlepage}
+
+\newpage
+
+\thispagestyle{empty}
+
+\input{./content/abstract}
+
+\newpage
+
+%\thispagestyle{empty}
+\tableofcontents
+
+\newpage
+% -------------------------------------------------------
+\hypersetup{pageanchor=true}
+\renewcommand{\thepage}{ \arabic{page} }
+
+\setcounter{page}{1}
+\onehalfspacing
+
+
+
+
+
+
+
+\section{Introduction}
+kurze History. Error von Lebesgue, Souslin/Luzin. Was bringen die kollegen uns\ldots
+
+This thesis aims to give an overview over the topic of analytic sets. 
+A field of study that came about in the early 20th century, born out of an error made by famous mathematician Henri Lebesgue. 
+He remarked in a 1905 manuscript that the Borel sets are closed under projections. 
+Only problem was that this is unfortunately not true. 
+First to discover his error was the Russian mathematician Mikhail Y. Souslin in 1917. \cite{rogers1980}
+\\
+In proving Lebesgue wrong, Souslin along with his supervisor Luzin and the latters colleague Sierpiński, started to study the sets that do arise from the operations Lebesgue was performing.
+
+
+
+
+
+\section{Polish spaces and Analytic sets}
+While we could in theory define analytic sets on a variety of spaces, the most common and by far most useful setting is that of polish spaces. These got their name in  honor of the polish mathematicians who were the first to extensively study them.
+
+\begin{definition}[Polish space]
+	A topological space $X$ is called a Polish space, if it is completely metrizable and seperable (contains a countable dense subset)
+\end{definition}
+
+Interesting to note here is the difference between a complete metric space and a completely metrizable space.
+For the latter, we only require the existence of a complete metric on $X$, but we do not need to choose a concrete one.
+This means of course that all complete metric spaces are Polish\\
+\\
+There are a few different ways to view analytic sets, as well as different ways to define them. 
+Souslin, for example in his early works on the topic defined them as arising from a series of unions and intersections of certain families of sets.
+We shall here however stick to the most common, and often most useful  definition, which is that of Analytic sets being continuous images of Polish spaces 
+
+\begin{definition}[Analytic set]
+	Let $X$ be a polish space, $A \subset X$. We call A analytic, if there exists a Polish space $Y$ and  $f:Y \to X$ continuous, such that  $f(Y) = A$
+
+\end{definition}
+
+
+\begin{lemma}
+	Finite and countable products of Polish spaces are polish.
+\end{lemma}
+
+
+\begin{theorem}
+	Open and closed subsets of Polish spaces are analytic
+\end{theorem}
+
+\begin{proof}
+	Let $X$ be a Polish space, $A \subset X$ open.
+\end{proof}
+
+Two particular spaces that are of great interest in the study of analytic sets are $\mathbb{N}^{\mathbb{N}}$ and $\left\{ 0,1 \right\}^{\mathbb{N}} $.
+We will see that the polish space $Z$ in our definition of analytic set can always be replaced by the space $\mathbb{N}^{\mathbb{N}}$. But first we need to verify that they are in fact polish:
+
+\begin{theorem}
+	$\mathbb{N}^\mathbb{N}$ is polish
+\end{theorem}
+\begin{proof}
+	\ldots		
+\end{proof}
+
+\begin{theorem}
+	$\left\{ 0,1 \right\}^\mathbb{N}$ is polish
+\end{theorem}
+\begin{proof}
+	\ldots	
+\end{proof}
+
+
+\begin{theorem}
+	Let $X$ be a Polish space. Then there is a continuous function $f: \mathbb{N}^\mathbb{N} \to X $, such that $f\left( \mathbb{N}^\mathbb{N} \right) = X$
+\end{theorem}
+
+
+\begin{theorem}
+	Let $A$ be a nonempty analytic subset of a polish space $X$. Then there exists continuous function $f: \mathbb{N}^{\mathbb{N}} \to X$, such that $f\left( \mathbb{N}^{\mathbb{N}} \right) = A$
+\end{theorem}
+
+\section{Borel-gedöns}
+
+\begin{theorem}
+	Let $B$ be a Borel subset of a Polish space X. Then B is analytic		
+\end{theorem}
+
+\begin{theorem}
+	Let A be a subset of a polish space X. If $A$ and  $A^{C}$ are analytic, then $A$ ist Borel.  
+\end{theorem}
+
+
+\begin{definition}[Zero-Dimensional space?]
+	.	
+\end{definition}
+
+\begin{theorem}
+	Let B be a Borel subset of a Polish space X. Then there exists a zero-dimensional space Z, such that $f(Z) = B$
+\end{theorem}
+
+\begin{theorem}[Separation theorem]
+	.
+\end{theorem}
+
+\begin{theorem}
+	There exists.
+\end{theorem}
+
+\begin{definition}[Borel isomorphic]
+	We call two Borel subsets $A,B$ of a Polish space X Borel isomorphic, if there exists a bijective, Borel measurable function $f: A \to B$
+\end{definition}
+
+
+\begin{theorem}
+	Two Borel subsets of a polish space X are Borel isomorphic iff they have the same cardinality
+\end{theorem}
+
+
+\section{Measurability}
+
+\begin{definition}[$\mu$-Measurable]
+	
+\end{definition}
+
+\begin{definition}[Universally measurable]
+	
+\end{definition}
+
+\begin{theorem}
+	Every finite Borel measure on Polish space is regular
+\end{theorem}
+
+\begin{theorem}
+	Let $B$ be an analytic subset of a polish space $X$. Then $B$ is universally measurable.
+\end{theorem}
+
+\begin{theorem}
+	Let $(X,\mathcal{A})$,  $\left( Y, \mathcal{B} \right) $ be measurable spaces, that is, spaces endowed with a $\sigma$-Algebra.  
+	Let $\mathcal{A}_*$ and $\mathcal{B}_*$ be the $\sigma$-Algebras of universally measurable sets.
+	If  $f:X \to Y$ is  $\mathcal{A}- \mathcal{B}$-measurable, then it is also $\mathcal{A}_*-\mathcal{B}_*$-measurable
+\end{theorem}
+
+
+\begin{definition}[Analytic space]
+	
+\end{definition}
+
+\begin{theorem}
+	Let X,A be analytic meas. space, Y polish, f measurable then f(A) analytic.
+\end{theorem}
+
+\section{K-analytic sets??? prettyprettyplease?}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\vspace{\fill}
+\nocite{*}
+\printbibliography{}
+\end{document}
