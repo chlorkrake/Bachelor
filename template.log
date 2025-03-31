@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.1.25)  17 MAR 2025 16:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.1.25)  21 MAR 2025 17:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -688,7 +688,7 @@ Package hyperref Info: Link coloring OFF on input line 86.
 
 Package hyperref Info: Option `pageanchor' set `false' on input line 89.
  (./content/titlepage.tex
-<./content/Uni_Logo_2016_SW.jpg, id=24, 481.8pt x 240.9pt>
+<./content/Uni_Logo_2016_SW.jpg, id=28, 481.8pt x 240.9pt>
 File: ./content/Uni_Logo_2016_SW.jpg Graphic file (type jpg)
 <use ./content/Uni_Logo_2016_SW.jpg>
 Package pdftex.def Info: ./content/Uni_Logo_2016_SW.jpg  used on input line 5.
@@ -747,19 +747,20 @@ Overfull \hbox (28.58235pt too wide) in paragraph at lines 47--64
 
  [2]
 Package hyperref Info: Option `pageanchor' set `true' on input line 105.
-Package hyperref Info: bookmark level for unknown definition defaults to 0 on input line 135.
+Package hyperref Info: bookmark level for unknown definition defaults to 0 on input line 137.
 
-Underfull \hbox (badness 10000) in paragraph at lines 139--146
+Underfull \hbox (badness 10000) in paragraph at lines 141--148
 
  []
 
-Package hyperref Info: bookmark level for unknown lemma defaults to 0 on input line 154.
-Package hyperref Info: bookmark level for unknown theorem defaults to 0 on input line 159.
+Package hyperref Info: bookmark level for unknown lemma defaults to 0 on input line 156.
+Package hyperref Info: bookmark level for unknown corollary defaults to 0 on input line 161.
+Package hyperref Info: bookmark level for unknown theorem defaults to 0 on input line 171.
 [1{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}] [2{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}]
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmr/m/sc/10'.
 (microtype)             Ignoring protrusion settings for this character.
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 299.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 346.
  (/usr/share/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -773,24 +774,24 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `template.out' has not changed.
-(rerunfilecheck)             Checksum: B54B9675C8276A2984143E897280127A;766.
+(rerunfilecheck)             Checksum: 197952E1B2D4CDB6A89B54D101D046A9;927.
 Package logreq Info: Writing requests to 'template.run.xml'.
 \openout1 = `template.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 21645 strings out of 476023
- 377216 string characters out of 5791582
- 1937187 words of memory out of 5000000
- 43278 multiletter control sequences out of 15000+600000
- 622766 words of font info for 135 fonts, out of 8000000 for 9000
+ 21666 strings out of 476023
+ 377536 string characters out of 5791582
+ 1938187 words of memory out of 5000000
+ 43283 multiletter control sequences out of 15000+600000
+ 623192 words of font info for 140 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  66i,6n,81p,1005b,1862s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on template.pdf (7 pages, 527447 bytes).
+Output written on template.pdf (7 pages, 530908 bytes).
 PDF statistics:
- 242 PDF objects out of 1000 (max. 8388607)
- 195 compressed objects within 2 object streams
- 64 named destinations out of 1000 (max. 500000)
- 37422 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 254 PDF objects out of 1000 (max. 8388607)
+ 206 compressed objects within 3 object streams
+ 70 named destinations out of 1000 (max. 500000)
+ 37430 words of extra memory for PDF output out of 42996 (max. 10000000)
 
