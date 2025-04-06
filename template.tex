@@ -153,6 +153,7 @@ We shall here however stick to the most common, and often most useful  definitio
 
 
 \begin{lemma}
+	\label{products}
 	Finite and countable products of Polish spaces are polish.
 \end{lemma}
 \begin{proof}
@@ -220,14 +221,17 @@ We will see that the polish space $Z$ in our definition of analytic set can alwa
 	$\mathbb{N}^\mathbb{N}$ is polish
 \end{theorem}
 \begin{proof}
-	\ldots		
+	by $\mathbb{N}$ we always mean the natural numbers together with the discrete topology in which every subset is open. Since $\mathbb{N}$ is countable, seperability immediately follows
+	The discrete metric $d\left( m,n \right) = 1 - \delta_{mn} $, which equals is a complete metric on  $\mathbb{N}$.
+	In this metric the only Cauchy sequences are those that are eventually constant which obviously converge.
+	It now follows from \ref{products}, that the cartesian product $\mathbb{N}^{\mathbb{N}}$ is also Polish.
 \end{proof}
 
 \begin{theorem}
 	$\left\{ 0,1 \right\}^\mathbb{N}$ is polish
 \end{theorem}
 \begin{proof}
-	\ldots	
+	The proof for this is equivalent to that of $\mathbb{N}^{\mathbb{N}}$ being polish. We again choose the discrete topology and discrete metric on $\left\{ 0,1 \right\} $ and use \ref{products} to get that $\left\{ 0,1 \right\} ^{\mathbb{N}} $ is Polish.	
 \end{proof}
 
 

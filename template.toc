@@ -3,5 +3,5 @@
 \contentsline {section}{\numberline {2}Polish spaces and Analytic sets}{ 1 }{section.2}%
 \contentsline {section}{\numberline {3}Borel-gedöns}{ 3 }{section.3}%
 \contentsline {section}{\numberline {4}Measurability}{ 4 }{section.4}%
-\contentsline {section}{\numberline {5}Alternative description}{ 4 }{section.5}%
-\contentsline {section}{\numberline {6}K-analytic sets??? prettyprettyplease?}{ 4 }{section.6}%
+\contentsline {section}{\numberline {5}Alternative description}{ 5 }{section.5}%
+\contentsline {section}{\numberline {6}K-analytic sets??? prettyprettyplease?}{ 5 }{section.6}%
