@@ -1,7 +1,10 @@
 \babel@toc {english}{}\relax 
 \contentsline {section}{\numberline {1}Introduction}{ 1 }{section.1}%
 \contentsline {section}{\numberline {2}Polish spaces and Analytic sets}{ 1 }{section.2}%
-\contentsline {section}{\numberline {3}Borel-gedöns}{ 3 }{section.3}%
-\contentsline {section}{\numberline {4}Measurability}{ 4 }{section.4}%
-\contentsline {section}{\numberline {5}Alternative description}{ 5 }{section.5}%
-\contentsline {section}{\numberline {6}K-analytic sets??? prettyprettyplease?}{ 5 }{section.6}%
+\contentsline {section}{\numberline {3}Borel-gedöns}{ 4 }{section.3}%
+\contentsline {section}{\numberline {4}Measurability}{ 5 }{section.4}%
+\contentsline {section}{\numberline {5}Alternative description}{ 6 }{section.5}%
+\contentsline {subsection}{\numberline {5.1}Souslin operation}{ 6 }{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Luzins construction ??}{ 6 }{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Projections}{ 6 }{subsection.5.3}%
+\contentsline {section}{\numberline {6}K-analytic sets??? prettyprettyplease?}{ 6 }{section.6}%

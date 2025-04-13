@@ -69,9 +69,9 @@
 	]{remark}	
 \declaretheorem[
 	name=Example,
-	style=remark,
+	style=definition,
 	numbered=no
-	]{exam}
+	]{example}
 
 
 % Hyperref (immer am Schluss der Präambel!) -------------
@@ -134,6 +134,8 @@ Chapers 2,3 and 4 will closely follow the notation and proofs of \cite{cohn2013}
 \section{Polish spaces and Analytic sets}
 While we could in theory define analytic sets on a variety of spaces, the most common and by far most useful setting is that of polish spaces. These got their name in  honor of the polish mathematicians who were the first to extensively study them.
 
+
+
 \begin{definition}[Polish space]
 	A topological space $X$ is called a Polish space, if it is completely metrizable and seperable (contains a countable dense subset)
 \end{definition}
@@ -151,6 +153,16 @@ We shall here however stick to the most common, and often most useful  definitio
 
 \end{definition}
 
+Throughout this section, we will use some standard results about topological and metric spaces without proof. These are:
+\begin{corollary}
+	\label{second_countable}
+	In metric spaces, seperability and second countablility are equivalent
+\end{corollary}
+\begin{corollary}
+	\label{closed_cc}
+	closed subsets of complete metric spaces are again complete metric spaces
+\end{corollary}
+Proofs for these theorems can be found in [cite/Anhang]
 
 \begin{lemma}
 	\label{products}
@@ -198,6 +210,16 @@ so  $X$ is a seperable metrisable space and thus Polish.
 
 \begin{proof}
 	Let $X$ be a polish space, $A$ be an open or closed subset of $X$
+	By Corollary \ref{second_countable}, $X$ has a countable basis of open sets for its Topology. Then the restrictions of those sets to  $A$ form  a countable basis for the subspace topology on $A$. 
+By the same equivalence, we get seperability of  $A$.\\
+If $A$ is closed, it is according to Corollary \ref{closed_cc} completely metrizable by any complete metric on $X$, resticted to  $A$.\\
+Now only the case of  $A$ being an open subset of  $X$ remains.
+Let  \[
+d_0 \left( x,y \right) := d\left( x,y \right) + \left| \frac{1}{d\left( x,A^{C} \right) } - \frac{1}{d\left( y,A^C \right) } \right| 
+.\]
+where $d$ is a complete metric on  $X$ and  $d\left( x,A^C \right) := \inf\left( d\left( x,z \right): z \in A^C \right)  $.\\
+$d_0$ defines a metric on $A$. [proof?]
+
 \end{proof}
 
 
@@ -298,6 +320,20 @@ We will try to formalise this notion as well as some other results about these t
 	Two Borel subsets of a polish space X are Borel isomorphic iff they have the same cardinality
 \end{theorem}
 
+We have seen that all Borel sets are analytic, but have not yet said anything about the converse. So we turn to the foundational theorem, introduced by souslin, that makes this field of analytic sets worth studying:
+\begin{theorem}[Souslin]
+	There exist Analytic sets which are not Borel sets. 
+\end{theorem}
+
+
+\begin{example}
+	As almost all 'nice' sets are Borel, we can assume that most constructions of Analytic non-borelian sets are fairly complicated. 
+	One of the earliest such examples was provided in 1936 by polish mathematician Stefan Mazurkiewicz [cite]:\\
+	Let $\mathbb{R}^I$ denote the space of real-valued functions, which are continuous in the closed interval $I:=[0,1]$. Let  $\Gamma$ be the set of functions  $f \in \mathbb{R}^I$, which are differentiable in $I$. This set is Co-analytic, meaning it is the complement of an analytic set, but is itself not analytic. 
+	Thus, its complement cannot be Borel (or $\Gamma$ would be Borel as well, and thus Analytic, leading to a contradiction). \\
+	The proof of this is rather long and technical and beyond the scope of this thesis, but can be found in [cite]
+	
+\end{example}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -341,6 +377,15 @@ We will try to formalise this notion as well as some other results about these t
 
 \section{Alternative description}
 
+
+\subsection{Souslin operation}
+[Rogers, p.319 ?]
+
+\subsection{Luzins construction ??}
+[Sur les ensembles analytiques]
+
+
+ \subsection{Projections}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

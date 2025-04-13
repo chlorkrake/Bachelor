@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.1.25)  4 APR 2025 11:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.1.25)  12 APR 2025 12:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -688,7 +688,7 @@ Package hyperref Info: Link coloring OFF on input line 86.
 
 Package hyperref Info: Option `pageanchor' set `false' on input line 89.
  (./content/titlepage.tex
-<./content/Uni_Logo_2016_SW.jpg, id=28, 481.8pt x 240.9pt>
+<./content/Uni_Logo_2016_SW.jpg, id=40, 481.8pt x 240.9pt>
 File: ./content/Uni_Logo_2016_SW.jpg Graphic file (type jpg)
 <use ./content/Uni_Logo_2016_SW.jpg>
 Package pdftex.def Info: ./content/Uni_Logo_2016_SW.jpg  used on input line 5.
@@ -747,31 +747,34 @@ Overfull \hbox (28.58235pt too wide) in paragraph at lines 47--64
 
  [2]
 Package hyperref Info: Option `pageanchor' set `true' on input line 105.
-Package hyperref Info: bookmark level for unknown definition defaults to 0 on input line 137.
+Package hyperref Info: bookmark level for unknown definition defaults to 0 on input line 139.
 
-Underfull \hbox (badness 10000) in paragraph at lines 141--148
-
- []
-
-Package hyperref Info: bookmark level for unknown lemma defaults to 0 on input line 156.
-
-Underfull \hbox (badness 10000) in paragraph at lines 160--170
+Underfull \hbox (badness 10000) in paragraph at lines 143--150
 
  []
 
+Package hyperref Info: bookmark level for unknown corollary defaults to 0 on input line 158.
 [1{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}]
-Underfull \hbox (badness 10000) in paragraph at lines 184--186
+Package hyperref Info: bookmark level for unknown lemma defaults to 0 on input line 168.
+
+Underfull \hbox (badness 10000) in paragraph at lines 172--182
 
  []
 
-Package hyperref Info: bookmark level for unknown corollary defaults to 0 on input line 195.
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--198
+
+ []
+
 [2{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}]
-Package hyperref Info: bookmark level for unknown theorem defaults to 0 on input line 205.
- [3]
+Package hyperref Info: bookmark level for unknown theorem defaults to 0 on input line 227.
+ [3] [4]
+Package hyperref Info: bookmark level for unknown example defaults to 0 on input line 330.
+ [5]
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmr/m/sc/10'.
 (microtype)             Ignoring protrusion settings for this character.
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 383.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 428.
  (/usr/share/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -779,30 +782,30 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [4] [5] [6] (./template.aux)
+ [6] [7] (./template.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `template.out' has not changed.
-(rerunfilecheck)             Checksum: 197952E1B2D4CDB6A89B54D101D046A9;927.
+(rerunfilecheck)             Checksum: 3FC21E75B8CF32A6C20AE0AA872A1DAA;1357.
 Package logreq Info: Writing requests to 'template.run.xml'.
 \openout1 = `template.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 21685 strings out of 476023
- 377774 string characters out of 5791582
- 1942187 words of memory out of 5000000
- 43286 multiletter control sequences out of 15000+600000
- 623773 words of font info for 147 fonts, out of 8000000 for 9000
+ 21713 strings out of 476023
+ 378314 string characters out of 5791582
+ 1941187 words of memory out of 5000000
+ 43299 multiletter control sequences out of 15000+600000
+ 626965 words of font info for 150 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  66i,9n,81p,1005b,1862s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on template.pdf (9 pages, 568198 bytes).
+Output written on template.pdf (10 pages, 575148 bytes).
 PDF statistics:
- 274 PDF objects out of 1000 (max. 8388607)
- 220 compressed objects within 3 object streams
- 72 named destinations out of 1000 (max. 500000)
- 37430 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 305 PDF objects out of 1000 (max. 8388607)
+ 250 compressed objects within 3 object streams
+ 83 named destinations out of 1000 (max. 500000)
+ 39502 words of extra memory for PDF output out of 42996 (max. 10000000)
 
