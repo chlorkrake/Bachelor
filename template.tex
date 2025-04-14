@@ -114,25 +114,32 @@
 
 
 
-\section{Introduction}
-kurze History. Error von Lebesgue, Souslin/Luzin. Was bringen die kollegen uns\ldots
+\section{A short history lesson}
+As it is so often the case with new and interesting discoveries, mathematical areas of study often come about unplanned or on accident. 
+One prime example of this is the field of Analytic sets. Studying it provides us, next to some important results in among others set theory, probability theory and functional analysis with a deeper understanding of the way mathematics is done in practice.\\
+Our story starts in the Year 1905 with famous Frensch mathematician Henri Lebesgue and his paper "Sur les fonctions représentables analytiquement" \cite{lebesgue1905}. 
+In it, Lebesgue proved many statements of great importance. 
+He did however include one small remark which stated, without proof, that the Borel sets are closed under Projections. \\
+About 10 years later, Russian mathematician Nikolai Luzin ordered his student Souslin to study Lebesgues paper. 
+When the still very young Souslin returned, saying he had found an error in Lebesgues work, Luzin and his colleage Sierpiński to their credit believed their student. \cite{sierpinski1950}
+Soon after, they would be the ones leading the charge on this young new field of mathematics that had just opened itself up to them. 
+As Souslin had correctly identified, there was no justification of the claim that projections of Borel sets would again be Borel. \\
+In a short publication in the French Journal "Comptes Rendu" in 1917, Souslin annouced the falsity of Lebesgues statement and gave a rough idea of his proof. [cite sur une ]
+These new sets that arise out of projections of Borel sets are called Analytic sets or Souslin sets.\\
+Much more thorough treatments of the topic as well as the first construction of an analytic set that is not Borel were later given by Luzin and Sierpinski after Souslins early death in 19 [cite sur quelques proprietes\ldots], \cite{lusin1923} \cite{lusin1927}
+It took until after the end of World War I for western mathematicians to start engaging with this new field. But once they did, it quickly started to become apparent that Analytic sets were going to become a very important tool for many different areas of mathematics. \cite{Moschovakis1987} \cite{rogers1980}.\\
+This thesis aims to give an overview over some of the basic concepts, theorems and proofs in the field of Analytic sets. Through chapters 2-4, we will mainly follow the conventions and proofs of \cite{cohn2013}
 
-This thesis aims to give an overview over the topic of analytic sets. 
-A field of study that came about in the early 20th century, born out of an error made by famous mathematician Henri Lebesgue. 
-He remarked in a 1905 manuscript that the Borel sets are closed under projections. 
-Only problem was that this is unfortunately not true. 
-First to discover his error was the Russian mathematician Mikhail Y. Souslin in 1917. \cite{rogers1980}
-\\
-In proving Lebesgue wrong, Souslin along with his supervisor Luzin and the latters colleague Sierpiński, started to study the sets that do arise from the operations Lebesgue was performing.
-
-
-Chapers 2,3 and 4 will closely follow the notation and proofs of \cite{cohn2013}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Polish spaces and Analytic sets}
-While we could in theory define analytic sets on a variety of spaces, the most common and by far most useful setting is that of polish spaces. These got their name in  honor of the polish mathematicians who were the first to extensively study them.
+As previously stated, Analytic sets arose out of the question, whether projections of Borel sets are again Borel and Souslins counterproof of that claim. 
+So if we seek to study the greater class of sets that is obtained as projections of Borel sets, it would only make sense do define them exactly as such.\\ 
+As it turns out however, there are many different ways to define these sets, all of them useful in their own ways. 
+The one that will be used throughout the following chapters is one that allows for particularly nice versions of many of the basic results considered here.
+We will define Analytic sets as continuous images of Polish spaces, named in honor of the Polish mathematicians who were the first to extensively study them. [cite]
 
 
 
@@ -284,10 +291,6 @@ We will try to formalise this notion as well as some other results about these t
 	Let $B$ be a Borel subset of a Polish space X. Then B is analytic		
 \end{theorem}
 
-\begin{theorem}
-	Let A be a subset of a polish space X. If $A$ and  $A^{C}$ are analytic, then $A$ ist Borel.  
-\end{theorem}
-
 
 \begin{definition}[Zero-Dimensional space?]
 	.	
@@ -307,6 +310,12 @@ We will try to formalise this notion as well as some other results about these t
 	.
 \end{theorem}
 
+
+\begin{theorem}
+	Let A be a subset of a polish space X. If $A$ and  $A^{C}$ are analytic, then $A$ ist Borel.  
+\end{theorem}
+
+
 \begin{theorem}
 	There exists.
 \end{theorem}
@@ -321,9 +330,17 @@ We will try to formalise this notion as well as some other results about these t
 \end{theorem}
 
 We have seen that all Borel sets are analytic, but have not yet said anything about the converse. So we turn to the foundational theorem, introduced by souslin, that makes this field of analytic sets worth studying:
+\begin{definition}[Universal set]
+	
+\end{definition}
+
 \begin{theorem}[Souslin]
 	There exist Analytic sets which are not Borel sets. 
 \end{theorem}
+\begin{proof}
+	[Kechris p.85]
+\end{proof}
+
 
 
 \begin{example}
@@ -424,6 +441,6 @@ We have seen that all Borel sets are analytic, but have not yet said anything ab
 
 
 \vspace{\fill}
-\nocite{*}
+%\nocite{*}
 \printbibliography{}
 \end{document}

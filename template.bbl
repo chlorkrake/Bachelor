@@ -19,46 +19,6 @@
 
 \refsection{0}
   \datalist[entry]{anyt/global//global/global}
-    \entry{blackwell1968}{article}{}
-      \name{author}{1}{}{%
-        {{hash=4a4097f6ada53bdd697b9a214e3305f2}{%
-           family={Blackwell},
-           familyi={B\bibinitperiod},
-           given={David},
-           giveni={D\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Institute of Mathematical Statistics}%
-      }
-      \strng{namehash}{4a4097f6ada53bdd697b9a214e3305f2}
-      \strng{fullhash}{4a4097f6ada53bdd697b9a214e3305f2}
-      \strng{bibnamehash}{4a4097f6ada53bdd697b9a214e3305f2}
-      \strng{authorbibnamehash}{4a4097f6ada53bdd697b9a214e3305f2}
-      \strng{authornamehash}{4a4097f6ada53bdd697b9a214e3305f2}
-      \strng{authorfullhash}{4a4097f6ada53bdd697b9a214e3305f2}
-      \field{labelalpha}{Bla68}
-      \field{sortinit}{B}
-      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{The Annals of Mathematical Statistics}
-      \field{number}{4}
-      \field{title}{{A Borel Set Not Containing a Graph}}
-      \field{volume}{39}
-      \field{year}{1968}
-      \true{nocite}
-      \field{pages}{1345\bibrangedash 1347}
-      \range{pages}{3}
-      \verb{doi}
-      \verb 10.1214/aoms/1177698260
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1214/aoms/1177698260
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1214/aoms/1177698260
-      \endverb
-    \endentry
     \entry{cohn2013}{book}{}
       \name{author}{1}{}{%
         {{hash=10e86c94388abc33e0c73c7a2d391690}{%
@@ -92,263 +52,139 @@
       \verb https://books.google.at/books?id=PEC3BAAAQBAJ
       \endverb
     \endentry
-    \entry{hansell1973}{article}{}
+    \entry{lebesgue1905}{article}{}
       \name{author}{1}{}{%
-        {{hash=1bc2f15c1dc511061b3691fcec73ebce}{%
-           family={Hansell},
-           familyi={H\bibinitperiod},
-           given={R.\bibnamedelimi W.},
-           giveni={R\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {American Mathematical Society}%
-      }
-      \strng{namehash}{1bc2f15c1dc511061b3691fcec73ebce}
-      \strng{fullhash}{1bc2f15c1dc511061b3691fcec73ebce}
-      \strng{bibnamehash}{1bc2f15c1dc511061b3691fcec73ebce}
-      \strng{authorbibnamehash}{1bc2f15c1dc511061b3691fcec73ebce}
-      \strng{authornamehash}{1bc2f15c1dc511061b3691fcec73ebce}
-      \strng{authorfullhash}{1bc2f15c1dc511061b3691fcec73ebce}
-      \field{labelalpha}{Han73}
-      \field{sortinit}{H}
-      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{00029939, 10886826}
-      \field{journaltitle}{Proceedings of the American Mathematical Society}
-      \field{number}{2}
-      \field{title}{On the Representation of Nonseparable Analytic Sets}
-      \field{urlday}{1}
-      \field{urlmonth}{3}
-      \field{urlyear}{2025}
-      \field{volume}{39}
-      \field{year}{1973}
-      \field{urldateera}{ce}
-      \true{nocite}
-      \field{pages}{402\bibrangedash 408}
-      \range{pages}{7}
-      \verb{urlraw}
-      \verb http://www.jstor.org/stable/2039654
-      \endverb
-      \verb{url}
-      \verb http://www.jstor.org/stable/2039654
-      \endverb
-    \endentry
-    \entry{Hausdorff1916}{article}{}
-      \name{author}{1}{}{%
-        {{hash=de0d523b6080ad0054982ec3e11e6641}{%
-           family={Hausdorff},
-           familyi={H\bibinitperiod},
-           given={F.},
-           giveni={F\bibinitperiod}}}%
-      }
-      \strng{namehash}{de0d523b6080ad0054982ec3e11e6641}
-      \strng{fullhash}{de0d523b6080ad0054982ec3e11e6641}
-      \strng{bibnamehash}{de0d523b6080ad0054982ec3e11e6641}
-      \strng{authorbibnamehash}{de0d523b6080ad0054982ec3e11e6641}
-      \strng{authornamehash}{de0d523b6080ad0054982ec3e11e6641}
-      \strng{authorfullhash}{de0d523b6080ad0054982ec3e11e6641}
-      \field{labelalpha}{Hau16}
-      \field{sortinit}{H}
-      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Mathematische Annalen}
-      \field{title}{Die Mächtigkeit der Borelschen Mengen.}
-      \field{volume}{77}
-      \field{year}{1916}
-      \true{nocite}
-      \field{pages}{430\bibrangedash 437}
-      \range{pages}{8}
-      \verb{urlraw}
-      \verb http://eudml.org/doc/158737
-      \endverb
-      \verb{url}
-      \verb http://eudml.org/doc/158737
-      \endverb
-    \endentry
-    \entry{hansell1983}{article}{}
-      \name{author}{3}{}{%
-        {{hash=eabcfc369b080cdda5fbbe6a4fcf6206}{%
-           family={Hansell},
-           familyi={H\bibinitperiod},
-           given={R.},
-           giveni={R\bibinitperiod}}}%
-        {{hash=baa92300300aefc5f6334c0ea99fcb6b}{%
-           family={Jayne},
-           familyi={J\bibinitperiod},
-           given={John},
-           giveni={J\bibinitperiod}}}%
-        {{hash=6b686152d129d765955568b8b630155c}{%
-           family={Rogers},
-           familyi={R\bibinitperiod},
-           given={C.},
-           giveni={C\bibinitperiod}}}%
-      }
-      \strng{namehash}{26f87cd47a347041923bcfb5d174f833}
-      \strng{fullhash}{26f87cd47a347041923bcfb5d174f833}
-      \strng{bibnamehash}{26f87cd47a347041923bcfb5d174f833}
-      \strng{authorbibnamehash}{26f87cd47a347041923bcfb5d174f833}
-      \strng{authornamehash}{26f87cd47a347041923bcfb5d174f833}
-      \strng{authorfullhash}{26f87cd47a347041923bcfb5d174f833}
-      \field{labelalpha}{HJR83}
-      \field{sortinit}{H}
-      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Mathematika}
-      \field{month}{12}
-      \field{title}{K-analytic sets. Analytic Sets}
-      \field{volume}{30}
-      \field{year}{1983}
-      \true{nocite}
-      \field{pages}{189\bibrangedash 221}
-      \range{pages}{33}
-      \verb{doi}
-      \verb 10.1112/S0025579300010524
-      \endverb
-    \endentry
-    \entry{holicky2010}{article}{}
-      \name{author}{1}{}{%
-        {{hash=5f56da49bfb0b9cd4b86ab6d3a239eb6}{%
-           family={Holický},
-           familyi={H\bibinitperiod},
-           given={Petr},
-           giveni={P\bibinitperiod}}}%
+        {{hash=eef80c379c101c77c3cc89233f729a65}{%
+           family={Lebesgue},
+           familyi={L\bibinitperiod},
+           given={Henri},
+           giveni={H\bibinitperiod}}}%
       }
       \list{language}{1}{%
-        {English}%
+        {fre}%
       }
-      \strng{namehash}{5f56da49bfb0b9cd4b86ab6d3a239eb6}
-      \strng{fullhash}{5f56da49bfb0b9cd4b86ab6d3a239eb6}
-      \strng{bibnamehash}{5f56da49bfb0b9cd4b86ab6d3a239eb6}
-      \strng{authorbibnamehash}{5f56da49bfb0b9cd4b86ab6d3a239eb6}
-      \strng{authornamehash}{5f56da49bfb0b9cd4b86ab6d3a239eb6}
-      \strng{authorfullhash}{5f56da49bfb0b9cd4b86ab6d3a239eb6}
-      \field{labelalpha}{Hol10}
-      \field{sortinit}{H}
-      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{1578-7303}
-      \field{journaltitle}{Rev. R. Acad. Cienc. Exactas Fís. Nat., Ser. A Mat., RACSAM}
-      \field{number}{2}
-      \field{title}{Descriptive classes of sets in nonseparable spaces}
-      \field{volume}{104}
-      \field{year}{2010}
-      \true{nocite}
-      \field{pages}{257\bibrangedash 282}
-      \range{pages}{26}
-      \verb{doi}
-      \verb 10.5052/RACSAM.2010.17
-      \endverb
-      \keyw{54H05,54-02}
-    \endentry
-    \entry{kechris2012}{book}{}
-      \name{author}{1}{}{%
-        {{hash=a32e3914290032052ba9f6492929163d}{%
-           family={Kechris},
-           familyi={K\bibinitperiod},
-           given={A.},
-           giveni={A\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Springer New York}%
-      }
-      \strng{namehash}{a32e3914290032052ba9f6492929163d}
-      \strng{fullhash}{a32e3914290032052ba9f6492929163d}
-      \strng{bibnamehash}{a32e3914290032052ba9f6492929163d}
-      \strng{authorbibnamehash}{a32e3914290032052ba9f6492929163d}
-      \strng{authornamehash}{a32e3914290032052ba9f6492929163d}
-      \strng{authorfullhash}{a32e3914290032052ba9f6492929163d}
-      \field{labelalpha}{Kec12}
-      \field{sortinit}{K}
-      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{isbn}{9781461241904}
-      \field{series}{Graduate Texts in Mathematics}
-      \field{title}{Classical Descriptive Set Theory}
-      \field{year}{2012}
-      \true{nocite}
-      \verb{urlraw}
-      \verb https://books.google.at/books?id=WR3SBwAAQBAJ
-      \endverb
-      \verb{url}
-      \verb https://books.google.at/books?id=WR3SBwAAQBAJ
-      \endverb
-    \endentry
-    \entry{Lorentz2001}{article}{}
-      \name{author}{1}{}{%
-        {{hash=13a9df9b49e5b6edbb54aefa91f754f6}{%
-           family={Lorentz},
-           familyi={L\bibinitperiod},
-           given={George\bibnamedelima G.},
-           giveni={G\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
-      }
-      \strng{namehash}{13a9df9b49e5b6edbb54aefa91f754f6}
-      \strng{fullhash}{13a9df9b49e5b6edbb54aefa91f754f6}
-      \strng{bibnamehash}{13a9df9b49e5b6edbb54aefa91f754f6}
-      \strng{authorbibnamehash}{13a9df9b49e5b6edbb54aefa91f754f6}
-      \strng{authornamehash}{13a9df9b49e5b6edbb54aefa91f754f6}
-      \strng{authorfullhash}{13a9df9b49e5b6edbb54aefa91f754f6}
-      \field{labelalpha}{Lor01}
+      \strng{namehash}{eef80c379c101c77c3cc89233f729a65}
+      \strng{fullhash}{eef80c379c101c77c3cc89233f729a65}
+      \strng{bibnamehash}{eef80c379c101c77c3cc89233f729a65}
+      \strng{authorbibnamehash}{eef80c379c101c77c3cc89233f729a65}
+      \strng{authornamehash}{eef80c379c101c77c3cc89233f729a65}
+      \strng{authorfullhash}{eef80c379c101c77c3cc89233f729a65}
+      \field{labelalpha}{Leb05}
       \field{sortinit}{L}
       \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{The Mathematical Intelligencer}
-      \field{title}{Who discovered analytic sets?}
-      \field{volume}{23}
-      \field{year}{2001}
-      \true{nocite}
-      \field{pages}{28\bibrangedash 32}
-      \range{pages}{5}
+      \field{journaltitle}{Journal de Mathématiques Pures et Appliquées}
+      \field{title}{Sur les fonctions représentables analytiquement}
+      \field{volume}{1}
+      \field{year}{1905}
+      \field{pages}{139\bibrangedash 216}
+      \range{pages}{78}
       \verb{urlraw}
-      \verb https://api.semanticscholar.org/CorpusID:121273798
+      \verb http://eudml.org/doc/234955
       \endverb
       \verb{url}
-      \verb https://api.semanticscholar.org/CorpusID:121273798
+      \verb http://eudml.org/doc/234955
       \endverb
     \endentry
-    \entry{mazurkiewicz2024}{misc}{}
-      \name{author}{2}{}{%
-        {{hash=95bbce8f8555b86bad15b02094ca77e0}{%
-           family={Mazurkiewicz},
-           familyi={M\bibinitperiod},
-           given={Łukasz},
-           giveni={Ł\bibinitperiod}}}%
-        {{hash=eebdb1f6c129d4b47205df1c3845d9b2}{%
-           family={Żeberski},
-           familyi={Ż\bibinitperiod},
-           given={Szymon},
-           giveni={S\bibinitperiod}}}%
+    \entry{lusin1923}{article}{}
+      \name{author}{1}{}{%
+        {{hash=be36dcc1535c4e3d80492f0a93bb5922}{%
+           family={Lusin},
+           familyi={L\bibinitperiod},
+           given={Nicolas},
+           giveni={N\bibinitperiod}}}%
       }
-      \strng{namehash}{3bf96f9e539a8c91e2425f7bc2344f5f}
-      \strng{fullhash}{3bf96f9e539a8c91e2425f7bc2344f5f}
-      \strng{bibnamehash}{3bf96f9e539a8c91e2425f7bc2344f5f}
-      \strng{authorbibnamehash}{3bf96f9e539a8c91e2425f7bc2344f5f}
-      \strng{authornamehash}{3bf96f9e539a8c91e2425f7bc2344f5f}
-      \strng{authorfullhash}{3bf96f9e539a8c91e2425f7bc2344f5f}
-      \field{labelalpha}{MŻ24}
+      \list{language}{1}{%
+        {fre}%
+      }
+      \strng{namehash}{be36dcc1535c4e3d80492f0a93bb5922}
+      \strng{fullhash}{be36dcc1535c4e3d80492f0a93bb5922}
+      \strng{bibnamehash}{be36dcc1535c4e3d80492f0a93bb5922}
+      \strng{authorbibnamehash}{be36dcc1535c4e3d80492f0a93bb5922}
+      \strng{authornamehash}{be36dcc1535c4e3d80492f0a93bb5922}
+      \strng{authorfullhash}{be36dcc1535c4e3d80492f0a93bb5922}
+      \field{extraname}{1}
+      \field{labelalpha}{Lus23}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal de Mathématiques Pures et Appliquées}
+      \field{title}{Sur un ensemble non mesurable B}
+      \field{year}{1923}
+      \field{pages}{53\bibrangedash 72}
+      \range{pages}{20}
+      \verb{urlraw}
+      \verb http://eudml.org/doc/234332
+      \endverb
+      \verb{url}
+      \verb http://eudml.org/doc/234332
+      \endverb
+    \endentry
+    \entry{lusin1927}{article}{}
+      \name{author}{1}{}{%
+        {{hash=be36dcc1535c4e3d80492f0a93bb5922}{%
+           family={Lusin},
+           familyi={L\bibinitperiod},
+           given={Nicolas},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {fre}%
+      }
+      \strng{namehash}{be36dcc1535c4e3d80492f0a93bb5922}
+      \strng{fullhash}{be36dcc1535c4e3d80492f0a93bb5922}
+      \strng{bibnamehash}{be36dcc1535c4e3d80492f0a93bb5922}
+      \strng{authorbibnamehash}{be36dcc1535c4e3d80492f0a93bb5922}
+      \strng{authornamehash}{be36dcc1535c4e3d80492f0a93bb5922}
+      \strng{authorfullhash}{be36dcc1535c4e3d80492f0a93bb5922}
+      \field{extraname}{2}
+      \field{labelalpha}{Lus27}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Fundamenta Mathematicae}
+      \field{number}{1}
+      \field{title}{Sur les ensembles analytiques}
+      \field{volume}{10}
+      \field{year}{1927}
+      \field{pages}{1\bibrangedash 95}
+      \range{pages}{95}
+      \verb{urlraw}
+      \verb http://eudml.org/doc/211183
+      \endverb
+      \verb{url}
+      \verb http://eudml.org/doc/211183
+      \endverb
+    \endentry
+    \entry{Moschovakis1987}{book}{}
+      \name{author}{1}{}{%
+        {{hash=6d1132aa0959565e246de2e6442996ff}{%
+           family={Moschovakis},
+           familyi={M\bibinitperiod},
+           given={Y\bibnamedelima N},
+           giveni={Y\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {North-Holland}%
+      }
+      \strng{namehash}{6d1132aa0959565e246de2e6442996ff}
+      \strng{fullhash}{6d1132aa0959565e246de2e6442996ff}
+      \strng{bibnamehash}{6d1132aa0959565e246de2e6442996ff}
+      \strng{authorbibnamehash}{6d1132aa0959565e246de2e6442996ff}
+      \strng{authornamehash}{6d1132aa0959565e246de2e6442996ff}
+      \strng{authorfullhash}{6d1132aa0959565e246de2e6442996ff}
+      \field{labelalpha}{Mos87}
       \field{sortinit}{M}
       \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{eprintclass}{math.LO}
-      \field{eprinttype}{arXiv}
-      \field{title}{Ideal Analytic sets}
-      \field{year}{2024}
-      \true{nocite}
-      \verb{eprint}
-      \verb 2310.07693
-      \endverb
-      \verb{urlraw}
-      \verb https://arxiv.org/abs/2310.07693
-      \endverb
-      \verb{url}
-      \verb https://arxiv.org/abs/2310.07693
-      \endverb
+      \field{month}{1}
+      \field{series}{Studies in Logic and the Foundations of Mathematics}
+      \field{title}{Descriptive Set Theory}
+      \field{year}{1987}
     \endentry
     \entry{rogers1980}{book}{}
       \name{author}{2}{}{%
@@ -388,46 +224,40 @@
       \verb https://books.google.at/books?id=zQHvAAAAMAAJ
       \endverb
     \endentry
-    \entry{Sion1963}{article}{}
+    \entry{sierpinski1950}{book}{}
       \name{author}{1}{}{%
-        {{hash=2224c2451350b84fa5cda65cd0b23565}{%
-           family={Sion},
+        {{hash=e0506933808e4a515967a46763b05518}{%
+           family={Sierpiński},
            familyi={S\bibinitperiod},
-           given={Maurice},
-           giveni={M\bibinitperiod}}}%
+           given={W.},
+           giveni={W\bibinitperiod}}}%
       }
       \list{language}{1}{%
-        {eng}%
+        {fre}%
       }
       \list{publisher}{1}{%
-        {Association des Annales de l'Institut Fourier}%
+        {Gauthier-Villars}%
       }
-      \strng{namehash}{2224c2451350b84fa5cda65cd0b23565}
-      \strng{fullhash}{2224c2451350b84fa5cda65cd0b23565}
-      \strng{bibnamehash}{2224c2451350b84fa5cda65cd0b23565}
-      \strng{authorbibnamehash}{2224c2451350b84fa5cda65cd0b23565}
-      \strng{authornamehash}{2224c2451350b84fa5cda65cd0b23565}
-      \strng{authorfullhash}{2224c2451350b84fa5cda65cd0b23565}
-      \field{labelalpha}{Sio63}
+      \strng{namehash}{e0506933808e4a515967a46763b05518}
+      \strng{fullhash}{e0506933808e4a515967a46763b05518}
+      \strng{bibnamehash}{e0506933808e4a515967a46763b05518}
+      \strng{authorbibnamehash}{e0506933808e4a515967a46763b05518}
+      \strng{authornamehash}{e0506933808e4a515967a46763b05518}
+      \strng{authorfullhash}{e0506933808e4a515967a46763b05518}
+      \field{labelalpha}{Sie50}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Annales de l'institut Fourier}
-      \field{number}{1}
-      \field{title}{On capacitability and measurability}
-      \field{volume}{13}
-      \field{year}{1963}
-      \true{nocite}
-      \field{pages}{83\bibrangedash 98}
-      \range{pages}{16}
+      \field{title}{Les ensembles projectifs et analytiques}
+      \field{year}{1950}
       \verb{urlraw}
-      \verb http://eudml.org/doc/73802
+      \verb http://eudml.org/doc/192631
       \endverb
       \verb{url}
-      \verb http://eudml.org/doc/73802
+      \verb http://eudml.org/doc/192631
       \endverb
-      \keyw{partial differential equations}
+      \keyw{set theory}
     \endentry
   \enddatalist
 \endrefsection
