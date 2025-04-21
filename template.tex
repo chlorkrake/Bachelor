@@ -1,9 +1,5 @@
 
 
-
-
-
-
 \documentclass[10pt, a4paper, titlepage]{article}
 
 \usepackage[T1]{fontenc}
@@ -13,6 +9,7 @@
 \usepackage{microtype}
 \usepackage[english]{babel}
 \usepackage{csquotes}
+\usepackage[parfill]{parskip} 
 % Bibliographie -----------------------------------------
 \usepackage[backend=biber,
 			style=alphabetic,
@@ -34,7 +31,7 @@
 \usepackage{amsthm}
 \usepackage{euscript}
 \numberwithin{equation}{section}
-
+\usepackage{mathtools}
 
 % Theorem-Umgebungen ------------------------------------
 \usepackage{thmtools}
@@ -116,19 +113,28 @@
 
 \section{A short history lesson}
 As it is so often the case with new and interesting discoveries, mathematical areas of study often come about unplanned or on accident. 
-One prime example of this is the field of Analytic sets. Studying it provides us, next to some important results in among others set theory, probability theory and functional analysis with a deeper understanding of the way mathematics is done in practice.\\
+One prime example of this phenomenon is the field of Analytic sets. 
+Studying it provides us, next to some important results areas such as descriptive set theory, probability theory and functional analysis with a deeper understanding of the way mathematics is done in practice.
+
 Our story starts in the Year 1905 with famous Frensch mathematician Henri Lebesgue and his paper "Sur les fonctions représentables analytiquement" \cite{lebesgue1905}. 
 In it, Lebesgue proved many statements of great importance. 
-He did however include one small remark which stated, without proof, that the Borel sets are closed under Projections. \\
-About 10 years later, Russian mathematician Nikolai Luzin ordered his student Souslin to study Lebesgues paper. 
-When the still very young Souslin returned, saying he had found an error in Lebesgues work, Luzin and his colleage Sierpiński to their credit believed their student. \cite{sierpinski1950}
-Soon after, they would be the ones leading the charge on this young new field of mathematics that had just opened itself up to them. 
-As Souslin had correctly identified, there was no justification of the claim that projections of Borel sets would again be Borel. \\
-In a short publication in the French Journal "Comptes Rendu" in 1917, Souslin annouced the falsity of Lebesgues statement and gave a rough idea of his proof. [cite sur une ]
-These new sets that arise out of projections of Borel sets are called Analytic sets or Souslin sets.\\
-Much more thorough treatments of the topic as well as the first construction of an analytic set that is not Borel were later given by Luzin and Sierpinski after Souslins early death in 19 [cite sur quelques proprietes\ldots], \cite{lusin1923} \cite{lusin1927}
-It took until after the end of World War I for western mathematicians to start engaging with this new field. But once they did, it quickly started to become apparent that Analytic sets were going to become a very important tool for many different areas of mathematics. \cite{Moschovakis1987} \cite{rogers1980}.\\
-This thesis aims to give an overview over some of the basic concepts, theorems and proofs in the field of Analytic sets. Through chapters 2-4, we will mainly follow the conventions and proofs of \cite{cohn2013}
+He did however also include one small remark which stated, without proof, that the Borel sets are closed under Projections. \\
+About 10 years later, Russian mathematician Nikolai Luzin ordered his student Mikhail Souslin to study Lebesgues paper. 
+When the still very young Souslin returned, saying he had found an error in Lebesgues work, Luzin and his colleage Sierpiński, to their credit, believed their student \cite{sierpinski1950}.
+
+Soon after, Souslin, Luzin and Sierpinski would be the ones leading the charge on this young new field of mathematics that had just opened itself up to them\cite{rogers1980}. \\
+As Souslin had correctly identified, there was no justification of the claim that projections of Borel sets would again be Borel.
+In a short publication in the French Journal "Comptes Rendu" in 1917, Souslin annouced the falsity of Lebesgues statement and gave a rough sketch of his proof. [cite sur une ].
+This meant that there was now a whole new class of sets waiting to be studied, namely those that arise as projections of Borel sets. We call these sets Analytic sets or Souslin sets.\\
+A much more thorough treatments of the topic as well as the first construction of an analytic set that is not Borel were later given by Luzin and Sierpinski after Souslins early death in 1919 [cite sur quelques proprietes\ldots], \cite{lusin1923} \cite{lusin1927}.
+
+It took until after the end of World War I for western mathematicians to start engaging with this new field. 
+But once they did, it quickly started to become apparent that Analytic sets were going to become a very important tool for many different areas of mathematics. \cite{Moschovakis1987} \cite{rogers1980}.
+
+This thesis aims to give an overview over some of the basic concepts, theorems and proofs in the field of Analytic sets. 
+In chapter 2, the basic notions and elementary proofs will be introduced. Chapter 3 will focus on the close similarities as well as differences between Analytic and Borel sets. Chapter 4 will provide some insights on the measure-theoretic properties and usefulness of Analytic sets and chaper 5 will explore some of the alternative constructions of Analytic sets and their uses. 
+
+Through chapters 2-4, we will mainly follow the conventions and proofs of \cite{cohn2013}
 
 
 
@@ -137,8 +143,8 @@ This thesis aims to give an overview over some of the basic concepts, theorems a
 \section{Polish spaces and Analytic sets}
 As previously stated, Analytic sets arose out of the question, whether projections of Borel sets are again Borel and Souslins counterproof of that claim. 
 So if we seek to study the greater class of sets that is obtained as projections of Borel sets, it would only make sense do define them exactly as such.\\ 
-As it turns out however, there are many different ways to define these sets, all of them useful in their own ways. 
-The one that will be used throughout the following chapters is one that allows for particularly nice versions of many of the basic results considered here.
+As it turns out however, there are many different ways to define these sets, all of them useful in their own ways. Souslin for example defined them as arising out of a series of Unions and Intersections of certain families of sets.
+The point of view that will be used throughout the following chapters is one that allows for particularly nice versions of many of the basic results considered here.
 We will define Analytic sets as continuous images of Polish spaces, named in honor of the Polish mathematicians who were the first to extensively study them. [cite]
 
 
@@ -149,11 +155,8 @@ We will define Analytic sets as continuous images of Polish spaces, named in hon
 
 Interesting to note here is the difference between a complete metric space and a completely metrizable space.
 For the latter, we only require the existence of a complete metric on $X$, but we do not need to choose a concrete one.
-This means of course that all complete metric spaces are Polish\\
+This means of course that all complete metric spaces and in particular all Banach spaces are Polish.\\
 \\
-There are a few different ways to view analytic sets, as well as different ways to define them. 
-Souslin, for example in his early works on the topic defined them as arising from a series of unions and intersections of certain families of sets.
-We shall here however stick to the most common, and often most useful  definition, which is that of Analytic sets being continuous images of Polish spaces 
 
 \begin{definition}[Analytic set]
 	Let $X$ be a polish space, $A \subset X$. We call A analytic, if there exists a Polish space $Y$ and  $f:Y \to X$ continuous, such that  $f(Y) = A$
@@ -169,7 +172,7 @@ Throughout this section, we will use some standard results about topological and
 	\label{closed_cc}
 	closed subsets of complete metric spaces are again complete metric spaces
 \end{corollary}
-Proofs for these theorems can be found in [cite/Anhang]
+Proofs for these theorems can be found for example in \cite{kaplansky2001}
 
 \begin{lemma}
 	\label{products}
@@ -177,11 +180,11 @@ Proofs for these theorems can be found in [cite/Anhang]
 \end{lemma}
 \begin{proof}
 	Let $X_1,X_2,\ldots$ be a sequence of (nonempty) Polish spaces. We can choose a complete metric $\overline{d_i}$ for each of the spaces $X_i$. 
-	Now for each $i$, let $d_i \left( x,y \right) := min \left\{ 1,\overline{d_i} \left( x,y \right)  \right\}$\\
+	Now for each $i$, let $d_i \left( x,y \right) \coloneq min \left\{ 1,\overline{d_i} \left( x,y \right)  \right\}$\\
 	This again defines a complete metric with the additional property that $d_i\left( x,y \right) \leq 1$ for all $x,y \in X_i$ [Genauer beweisen? Anhang?]
 This new metric retains only information about small distances in $\overline{d_i}$.\\
-Now we can turn towards the cartesian product $X := \prod X_i$.
-Let $d\left( x,y \right):= \sum \frac{1}{2^{n}} d_i\left( x_{i},y_{i} \right)$
+Now we can turn towards the cartesian product $X \coloneq \prod X_i$.
+Let $d\left( x,y \right)\coloneq \sum \frac{1}{2^{n}} d_i\left( x_{i},y_{i} \right)$
 where $x = \left( x_1,x_2,\ldots \right), y = \left( y_1,y_2,\ldots \right) \in X$ 
 This sum converges for all $x,y \in X$ since we constructed the $d_i$ to be bounded by 1.
  Moreover, $d$ defines a metric on $X$. This is easily seen by the fact that positive definieteness, symmetry and the triangle inequality all hold in each term of our sum individually and thusfor the whole sum. 
@@ -190,10 +193,10 @@ This sum converges for all $x,y \in X$ since we constructed the $d_i$ to be boun
 [Ab hier nicht im Buch, hoffe der Beweis passt so] \\
 To show that $d$ is indeed complete, we take an arbitrary Cauchy sequence $(x_{n})_{n \in  \mathbb{N}}$ in $X$. The projection onto each  space $X_i$ is also a cauchy sequence  $x_{i_n}$.
  Since $X_i$ is complete, $x_{i_n}$ converges to some value $x_i$. 
-Let $x:= \left( x_1,x_2,\ldots \right) $ be the componentwise limit of our Cauchy sequences. We need to show that $x_{n}$ converges to $x$ in the metric $d$:\\
+Let $x \coloneq \left( x_1,x_2,\ldots \right) $ be the componentwise limit of our Cauchy sequences. We need to show that $x_{n}$ converges to $x$ in the metric $d$:\\
 Choose an arbitrary $\varepsilon > 0 $ and $m \in  \mathbb{N}$, such that $\sum_{i \geq m} \frac{1}{2^i} \leq \frac{\varepsilon}{2} $.
 For each $i \leq m$, we can find an  $N_i$, such that $d_i\left( x_{i_n},x_i \right) \leq \frac{\varepsilon}{2}$ for all $n\geq N_i$. 
-If we choose $N := max_{i \leq m}\left\{ N_i \right\} $, we get the following esimate for $n \geq N$: 
+If we choose $N  \coloneq max_{i \leq m}\left\{ N_i \right\} $, we get the following esimate for $n \geq N$: 
 
 \begin{align*}
 	d\left( x_{n},x \right) &= \sum \frac{1}{2^i} d_i\left( x_{i_n},x_i \right)\\
@@ -222,11 +225,15 @@ By the same equivalence, we get seperability of  $A$.\\
 If $A$ is closed, it is according to Corollary \ref{closed_cc} completely metrizable by any complete metric on $X$, resticted to  $A$.\\
 Now only the case of  $A$ being an open subset of  $X$ remains.
 Let  \[
-d_0 \left( x,y \right) := d\left( x,y \right) + \left| \frac{1}{d\left( x,A^{C} \right) } - \frac{1}{d\left( y,A^C \right) } \right| 
+d_0 \left( x,y \right)  \coloneq d\left( x,y \right) + \left| \frac{1}{d\left( x,A^{C} \right) } - \frac{1}{d\left( y,A^C \right) } \right| 
 .\]
-where $d$ is a complete metric on  $X$ and  $d\left( x,A^C \right) := \inf\left( d\left( x,z \right): z \in A^C \right)  $.\\
-$d_0$ defines a metric on $A$. [proof?]
-
+where $d$ is a complete metric on  $X$ and  $d\left( x,A^C \right)  \coloneq \inf\left( d\left( x,z \right): z \in A^C \right)  $\\
+$d_0$ defines a metric on $A$ [proof?]. Relevant for this proof is also, that $d\left( x,A^C \right) $ is a continuous function in $x$. [proof?]\\
+We need to make sure that $d_0$ metrizes the subspace topology on $A$ and that  $A$ is complete under it.\\
+Let $\left( x_{n} \right)_{n \in \mathbb{N}}$ be a sequence in $A$. Due to the continuity of  $d\left( x,A^C \right) $, this sequence converges with respect to $d_0$ if and only if it converges with respect to $d$. This means that $d_0$ generates the same topology on $A$ as  $d$ does. So now only copleteness remains to be shown: \\
+Let $(x_{n})_{n \in  \mathbb{N}} $ be a Cauchy sequence in A with respect to $d_0$. Then it is also Cauchy with respect to $d$ and since X is complete under  $d$, $x_{n} \to x$ for some $x \in X$. 
+Suppose now that $x \notin A$. Then  $d\left( x_{n},A^{C} \right) \to 0$. In that case, $\left| \frac{1}{d\left( x_{n},A^C \right) }- \frac{1}{d\left( x_m \right) } \right| $ and by extension also $d_0\left( x_{n},x_m \right) $ would become unbounded for $m,n \to \infty$, contradicting the assumption that $\left( x_{n} \right) $ is Cauchy. 
+So the limit $x$ has to be in  $A$, making it complete under $d_0$ and thus Polish. 
 \end{proof}
 
 
@@ -237,8 +244,8 @@ $d_0$ defines a metric on $A$. [proof?]
 \begin{proof}
 	Let $X$ be a Polish space, $A \subset X$ open or closed.
 	We know that $A$, as a space is polish. So there exists a polish space $Y$ and a continuuous function  $f:Y\to A$, such that  $f(Y) = A$. 
-	Let $\iota := A \hookrightarrow X$ be the canonical embedding of  $A$ into  $X$. 
-	Then we can define  $\tilde{f} := f \circ \iota$. Then  $\tilde{f}:Y \to X $ and  $\tilde{f}(Y) = A$ hold. So  $A$ is an analytic subset of X
+	Let $\iota  \coloneq A \hookrightarrow X$ be the canonical embedding of  $A$ into  $X$. 
+	Then we can define  $\tilde{f}  \coloneq f \circ \iota$. Then  $\tilde{f}:Y \to X $ and  $\tilde{f}(Y) = A$ hold. So  $A$ is an analytic subset of X
 
 
 \end{proof}
@@ -267,12 +274,17 @@ We will see that the polish space $Z$ in our definition of analytic set can alwa
 \begin{theorem}
 	Let $X$ be a Polish space. Then there is a continuous function $f: \mathbb{N}^\mathbb{N} \to X $, such that $f\left( \mathbb{N}^\mathbb{N} \right) = X$
 \end{theorem}
-
+\begin{proof}
+	
+\end{proof}
 
 \begin{theorem}
 	Let $A$ be a nonempty analytic subset of a polish space $X$. Then there exists continuous function $f: \mathbb{N}^{\mathbb{N}} \to X$, such that $f\left( \mathbb{N}^{\mathbb{N}} \right) = A$
 \end{theorem}
-
+\begin{proof}
+	By definition, $A$ is the image of some Polish space $Z$ under a continuous function $f$. As was just shown,  $Z$ is the image of  $\mathbb{N}^\mathbb{N}$ under a continuous function $g$.
+	Thus  $A$ is the Image of  $\mathbb{N}^\mathbb{N}$ under $f \circ g$
+\end{proof}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -345,10 +357,10 @@ We have seen that all Borel sets are analytic, but have not yet said anything ab
 
 \begin{example}
 	As almost all 'nice' sets are Borel, we can assume that most constructions of Analytic non-borelian sets are fairly complicated. 
-	One of the earliest such examples was provided in 1936 by polish mathematician Stefan Mazurkiewicz [cite]:\\
-	Let $\mathbb{R}^I$ denote the space of real-valued functions, which are continuous in the closed interval $I:=[0,1]$. Let  $\Gamma$ be the set of functions  $f \in \mathbb{R}^I$, which are differentiable in $I$. This set is Co-analytic, meaning it is the complement of an analytic set, but is itself not analytic. 
+	One of the earliest such examples was provided in 1936 by polish mathematician Stefan Mazurkiewicz \cite{mazurkiewicz1936}:\\
+	Let $\mathbb{R}^I$ denote the space of real-valued functions, which are continuous in the closed interval $I \coloneq[0,1]$. Let  $\Gamma$ be the set of functions  $f \in \mathbb{R}^I$, which are differentiable in $I$. This set is Co-analytic, meaning it is the complement of an analytic set, but is itself not analytic. 
 	Thus, its complement cannot be Borel (or $\Gamma$ would be Borel as well, and thus Analytic, leading to a contradiction). \\
-	The proof of this is rather long and technical and beyond the scope of this thesis, but can be found in [cite]
+	The proof of this is however is rather long and technical and beyond the scope of this thesis.
 	
 \end{example}
 
@@ -400,6 +412,8 @@ We have seen that all Borel sets are analytic, but have not yet said anything ab
 
 \subsection{Luzins construction ??}
 [Sur les ensembles analytiques]
+
+
 
 
  \subsection{Projections}

@@ -1,15 +1,15 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'template.blg'
-[109] biber:340> INFO - === Mo Apr 14, 2025, 22:18:11
-[131] Biber.pm:419> INFO - Reading 'template.bcf'
-[228] Biber.pm:979> INFO - Found 7 citekeys in bib section 0
-[249] Biber.pm:4419> INFO - Processing section 0
+[108] biber:340> INFO - === Mi Apr 16, 2025, 16:06:57
+[126] Biber.pm:419> INFO - Reading 'template.bcf'
+[224] Biber.pm:979> INFO - Found 9 citekeys in bib section 0
+[250] Biber.pm:4419> INFO - Processing section 0
 [261] Biber.pm:4610> INFO - Looking for bibtex file './content/references.bib' for section 0
-[262] bibtex.pm:1713> INFO - LaTeX decoding ...
-[283] bibtex.pm:1519> INFO - Found BibTeX data source './content/references.bib'
-[385] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[385] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[385] Biber.pm:4239> INFO - Sorting list 'anyt/global//global/global' of type 'entry' with template 'anyt' and locale 'en-US'
-[385] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[398] bbl.pm:660> INFO - Writing 'template.bbl' with encoding 'UTF-8'
-[401] bbl.pm:763> INFO - Output to template.bbl
+[263] bibtex.pm:1713> INFO - LaTeX decoding ...
+[287] bibtex.pm:1519> INFO - Found BibTeX data source './content/references.bib'
+[403] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[403] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[403] Biber.pm:4239> INFO - Sorting list 'anyt/global//global/global' of type 'entry' with template 'anyt' and locale 'en-US'
+[403] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[426] bbl.pm:660> INFO - Writing 'template.bbl' with encoding 'UTF-8'
+[430] bbl.pm:763> INFO - Output to template.bbl
