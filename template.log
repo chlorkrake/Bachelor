@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.1.25)  3 MAY 2025 13:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.1.25)  7 MAY 2025 17:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -780,37 +780,33 @@ Overfull \hbox (58.58235pt too wide) in paragraph at lines 47--64
 Package hyperref Info: Option `pageanchor' set `true' on input line 102.
  [1]
 Package hyperref Info: bookmark level for unknown definition defaults to 0 on input line 152.
+Package hyperref Info: bookmark level for unknown remark defaults to 0 on input line 157.
 
-Underfull \hbox (badness 10000) in paragraph at lines 156--160
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 156--160
+Underfull \hbox (badness 10000) in paragraph at lines 158--161
 
  []
 
-Package hyperref Info: bookmark level for unknown corollary defaults to 0 on input line 168.
-Package hyperref Info: bookmark level for unknown lemma defaults to 0 on input line 178.
+Package hyperref Info: bookmark level for unknown corollary defaults to 0 on input line 171.
+Package hyperref Info: bookmark level for unknown lemma defaults to 0 on input line 181.
+
+Underfull \hbox (badness 10000) in paragraph at lines 185--196
+
+ []
+
 [2{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}]
-Underfull \hbox (badness 10000) in paragraph at lines 182--192
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 206--208
+Underfull \hbox (badness 10000) in paragraph at lines 210--212
 
  []
 
 [3{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}]
-Package hyperref Info: bookmark level for unknown theorem defaults to 0 on input line 241.
- [4] [5]
-Package hyperref Info: bookmark level for unknown example defaults to 0 on input line 359.
- [6]
+Package hyperref Info: bookmark level for unknown theorem defaults to 0 on input line 245.
+ [4] [5] [6]
+Package hyperref Info: bookmark level for unknown example defaults to 0 on input line 388.
+ [7]
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmr/m/sc/10'.
 (microtype)             Ignoring protrusion settings for this character.
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 458.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 487.
  (/usr/share/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -818,7 +814,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [7] [8] (./template.aux)
+ [8] (./template.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -830,18 +826,18 @@ Package logreq Info: Writing requests to 'template.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 22382 strings out of 476023
- 390504 string characters out of 5791582
+ 22392 strings out of 476023
+ 390663 string characters out of 5791582
  1942187 words of memory out of 5000000
- 43950 multiletter control sequences out of 15000+600000
- 627178 words of font info for 152 fonts, out of 8000000 for 9000
+ 43953 multiletter control sequences out of 15000+600000
+ 627485 words of font info for 155 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  66i,9n,81p,1005b,1866s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on template.pdf (12 pages, 579716 bytes).
+</usr/share/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr5.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy5.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
+Output written on template.pdf (12 pages, 608263 bytes).
 PDF statistics:
- 315 PDF objects out of 1000 (max. 8388607)
- 258 compressed objects within 3 object streams
- 83 named destinations out of 1000 (max. 500000)
+ 326 PDF objects out of 1000 (max. 8388607)
+ 265 compressed objects within 3 object streams
+ 84 named destinations out of 1000 (max. 500000)
  39502 words of extra memory for PDF output out of 42996 (max. 10000000)
 
