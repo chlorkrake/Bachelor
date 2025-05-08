@@ -114,19 +114,19 @@
 \section{A short history lesson}
 As it is so often the case with new and interesting discoveries, mathematical areas of study often come about unplanned or on accident. 
 One prime example of this phenomenon is the field of Analytic sets. 
-Studying it provides us, next to some important results areas such as descriptive set theory, probability theory and functional analysis with a deeper understanding of the way mathematics is done in practice.
+Studying it provides us, next to some important results in areas such as descriptive set theory, probability theory and functional analysis with a deeper understanding of the way mathematics is done in practice.
 
 Our story starts in the Year 1905 with famous Frensch mathematician Henri Lebesgue and his paper "Sur les fonctions représentables analytiquement" \cite{lebesgue1905}. 
 In it, Lebesgue proved many statements of great importance. 
-He did however also include one small remark which stated, without proof, that the Borel sets are closed under Projections. \\
+He did however also include one small remark which stated, without proof, that the Borel sets are closed under projections. \\
 About 10 years later, Russian mathematician Nikolai Luzin ordered his student Mikhail Souslin to study Lebesgues paper. 
-When the still very young Souslin returned, saying he had found an error in Lebesgues work, Luzin and his colleage Sierpiński, to their credit, believed their student \cite{sierpinski1950}.
+When the still very young Souslin returned, saying he had found an error in Lebesgues work, Luzin and his colleage Sierpiński, to their credit, believed their student and helped him find a counterexample to Lebesgues claim \cite{sierpinski1950}.
 
-Soon after, Souslin, Luzin and Sierpinski would be the ones leading the charge on this young new field of mathematics that had just opened itself up to them\cite{rogers1980}. \\
+Soon after, Souslin, Luzin and Sierpinski would be the ones leading the charge on this young new field of mathematics that had just opened itself up to them \cite{rogers1980}. \\
 As Souslin had correctly identified, there was no justification of the claim that projections of Borel sets would again be Borel.
 In a short publication in the French Journal "Comptes Rendu" in 1917, Souslin annouced the falsity of Lebesgues statement and gave a rough sketch of his proof. [cite sur une ].
-This meant that there was now a whole new class of sets waiting to be studied, namely those that arise as projections of Borel sets. We call these sets Analytic sets or Souslin sets.\\
-A much more thorough treatments of the topic as well as the first construction of an analytic set that is not Borel were later given by Luzin and Sierpinski after Souslins early death in 1919 [cite sur quelques proprietes\ldots], \cite{lusin1923} \cite{lusin1927}.
+This meant that there was now a whole new class of sets waiting to be studied, namely those that arise as projections of Borel sets. We call these sets Analytic sets or, in honor of their discoverer, Souslin sets.\\
+A much more thorough treatments of the topic as well as the first construction of an Analytic set that is not Borel were later published by Luzin and Sierpinski after Souslins early death in 1919 [cite sur quelques proprietes\ldots], \cite{lusin1923} \cite{lusin1927}.
 
 It took until after the end of World War I for western mathematicians to start engaging with this new field. 
 But once they did, it quickly started to become apparent that Analytic sets were going to become a very important tool for many different areas of mathematics. \cite{Moschovakis1987} \cite{rogers1980}.
@@ -142,56 +142,59 @@ Through chapters 2-4, we will mainly follow the conventions and proofs of \cite{
 
 \section{Polish spaces and Analytic sets}
 As previously stated, Analytic sets arose out of the question, whether projections of Borel sets are again Borel and Souslins counterproof of that claim. 
-So if we seek to study the greater class of sets that is obtained as projections of Borel sets, it would only make sense do define them exactly as such.\\ 
-As it turns out however, there are many different ways to define these sets, all of them useful in their own ways. Souslin for example defined them as arising out of a series of Unions and Intersections of certain families of sets.
-The point of view that will be used throughout the following chapters is one that allows for particularly nice versions of many of the basic results considered here.
-We will define Analytic sets as continuous images of Polish spaces, named in honor of the Polish mathematicians who were the first to extensively study them. [cite]
-
+So if we seek to study this greater class of sets that is obtained as projections of Borel sets, it would only make sense do define them exactly as such.\\ 
+As it turns out however, there are many different ways to introduce these sets, all of them useful in their own ways. 
+Souslin for example defined them as arising out of a series of unions and intersections of certain families of sets.
+The point of view that will be used throughout the following chapters is one that allows for particularly nice versions of many of the basic results considered here.\\
+We will define Analytic sets as continuous images of Polish spaces, named in honor of the Polish mathematicians who were the first to extensively study them [cite].
 
 
 \begin{definition}[Polish space]
-	A topological space $X$ is called a Polish space, if it is completely metrizable and seperable (contains a countable dense subset)
+	A topological space $X$ is called a Polish space, if it is completely metrizable and seperable (contains a countable dense subset).
 \end{definition}
 
 \begin{remark}
 	
-Interesting to note here is the difference between a complete metric space and a completely metrizable space.
-For the latter, we only require the existence of a complete metric on $X$, but we do not need to choose a concrete one.
-This means of course that all complete metric spaces and in particular all Banach spaces are Polish.\\
+Interesting to note here is the subtle difference between a complete metric space and a completely metrizable space.
+For the latter, we only require the existence of a complete metric on $X$, but we do not need to choose a specific one.
 \end{remark}
 
+From the definition it is immediately obvious that all complete metric spaces and in particular all Banach spaces are Polish.
 
 \begin{definition}[Analytic set]
-	Let $X$ be a polish space, $A \subset X$. We call A analytic, if there exists a Polish space $Y$ and  $f:Y \to X$ continuous, such that  $f(Y) = A$
+	Let $X$ be a Polish space, $A \subset X$. We call A Analytic, if there exists a Polish space $Y$ and  $f:Y \to X$ continuous, such that  $f(Y) = A$
 
 \end{definition}
 
 Throughout this section, we will use some standard results about topological and metric spaces without proof. These are:
 \begin{corollary}
 	\label{second_countable}
-	In metric spaces, seperability and second countablility are equivalent
+	In metric spaces, seperability and second countablility are equivalent \cite{kaplansky2001}
 \end{corollary}
 \begin{corollary}
 	\label{closed_cc}
-	closed subsets of complete metric spaces are again complete metric spaces
+	closed subsets of complete metric spaces are again complete metric spaces \cite{kaplansky2001}
 \end{corollary}
-Proofs for these theorems can be found for example in \cite{kaplansky2001}
 
+\begin{theorem}[Cantor's nested set theorem]
+	
+\end{theorem}
+
+With this out of the way, we can start proving some fundamental facts about Polish spaces and Analytic sets. 
 \begin{lemma}
 	\label{products}
-	Finite and countable products of Polish spaces are polish.
+	Finite and countable products of Polish spaces are Polish.
 \end{lemma}
 \begin{proof}
 	Let $X_1,X_2,\ldots$ be a sequence of (nonempty) Polish spaces. We can choose a complete metric $\overline{d_i}$ for each of the spaces $X_i$. 
 	Now for each $i$, let $d_i \left( x,y \right) \coloneq min \left\{ 1,\overline{d_i} \left( x,y \right)  \right\}$\\
 	This again defines a complete metric with the additional property that $d_i\left( x,y \right) \leq 1$ for all $x,y \in X_i$ [Genauer beweisen? Anhang?]
 This new metric retains only information about small distances in $\overline{d_i}$.\\
-Now we can turn towards the cartesian product $X \coloneq \prod X_i$.
+Now we can turn towards the cartesian product $X \coloneq \prod X_i$.\\
 Let $d\left( x,y \right)\coloneq \sum \frac{1}{2^{n}} d_i\left( x_{i},y_{i} \right)$
-where $x = \left( x_1,x_2,\ldots \right), y = \left( y_1,y_2,\ldots \right) \in X$ 
-$\sum_{i=1}^{\infty} x \in \mathbb{R} \mathbb{N}$
+where $x = \left( x_1,x_2,\ldots \right), y = \left( y_1,y_2,\ldots \right) \in X$. 
 This sum converges for all $x,y \in X$ since we constructed the $d_i$ to be bounded by 1.
- Moreover, $d$ defines a metric on $X$. This is easily seen by the fact that positive definieteness, symmetry and the triangle inequality all hold in each term of our sum individually and thusfor the whole sum. 
+ Moreover, $d$ defines a metric on $X$. This is easily seen by the fact that positive definiteness, symmetry and the triangle inequality all hold in each term of our sum individually and thus for the whole sum. 
  The topology generated by $d$ is exactly the product topology on $X$ [Genauer?].\\
 
 [Ab hier nicht im Buch, hoffe der Beweis passt so] \\
@@ -208,22 +211,20 @@ If we choose $N  \coloneq max_{i \leq m}\left\{ N_i \right\} $, we get the follo
 				&\leq \sum_{i \leq m} \frac{1}{2^i} \frac{\varepsilon}{2} + \sum_{i\geq m} \frac{1}{2^i} \\
 				&\leq \frac{\varepsilon}{2} + \frac{\varepsilon}{2} = \varepsilon
 \end{align*}
-So we get convergence of $x_n$ and thus completeness of the metric space $\left( X,d \right) $ \\
+So we get convergence of $x_n$ and thus completeness of the metric space $\left( X,d \right) $. 
 
-What remains to be shown is seperability. We want to make use of the equivalence of seperability and second countability for metric spaces. [cite]
+What remains to be shown is seperability. We want to make use of the equivalence of seperability and second countability for metric spaces [ref].
+
 For each $i$, we can find a countable Basis  $\mathcal{U}_i$ for the topology on $X_i$.
 The sets of the form $U_1 \times U_2 \times \ldots \times U_N \times X_{N+1} \times X_{N+2} \times \ldots$ form a countable Basis for the product topology on $X$, 
 so  $X$ is a seperable metrisable space and thus Polish.
-
 \end{proof}
 
 \begin{corollary}
-	Open and closed subsets of polish spaces are polish
+	Open and closed subsets of Polish spaces are Polish
 \end{corollary}
-
-
 \begin{proof}
-	Let $X$ be a polish space, $A$ be an open or closed subset of $X$
+	Let $X$ be a Polish space, $A$ an open or closed subset of $X$.
 	By Corollary \ref{second_countable}, $X$ has a countable basis of open sets for its Topology. Then the restrictions of those sets to  $A$ form  a countable basis for the subspace topology on $A$. 
 By the same equivalence, we get seperability of  $A$.\\
 If $A$ is closed, it is according to Corollary \ref{closed_cc} completely metrizable by any complete metric on $X$, resticted to  $A$.\\
@@ -242,44 +243,42 @@ So the limit $x$ has to be in  $A$, making it complete under $d_0$ and thus Poli
 
 
 \begin{theorem}
-	Open and closed subsets of Polish spaces are analytic
+	Open and closed subsets of Polish spaces are Analytic
 \end{theorem}
 
 \begin{proof}
-	Let $X$ be a Polish space, $A \subset X$ open or closed.
-	We know that $A$, as a space is polish. So there exists a polish space $Y$ and a continuuous function  $f:Y\to A$, such that  $f(Y) = A$. 
+Let $X$ be a Polish space, $A \subset X$ open or closed.
+We know that $A$, as a space is Polish. So there exists a Polish space $Y$ and a continuous function  $f:Y\to A$, such that  $f(Y) = A$. 
 	Let $\iota  \coloneq A \hookrightarrow X$ be the canonical embedding of  $A$ into  $X$. 
-	Then we can define  $\tilde{f}  \coloneq f \circ \iota$. Then  $\tilde{f}:Y \to X $ and  $\tilde{f}(Y) = A$ hold. So  $A$ is an analytic subset of X
-
-
+	Then we can define  $\tilde{f}  \coloneq f \circ \iota$. Then  $\tilde{f}:Y \to X $ and  $\tilde{f}(Y) = A$ hold. So  $A$ is an Analytic subset of X.
 \end{proof}
 
-Two particular spaces that are of great interest in the study of analytic sets are $\mathbb{N}^{\mathbb{N}}$ and $\left\{ 0,1 \right\}^{\mathbb{N}} $.
-We will see that the polish space $Z$ in our definition of analytic set can always be replaced by the space $\mathbb{N}^{\mathbb{N}}$. But first we need to verify that they are in fact polish:
+Two particular spaces that are of great interest in the study of Analytic sets are $\mathbb{N}^{\mathbb{N}}$ and $\left\{ 0,1 \right\}^{\mathbb{N}} $.
+We will see that the Polish space $Z$ in our definition of Analytic set can always be replaced by the space $\mathbb{N}^{\mathbb{N}}$. But first we need to verify that they are in fact Polish:
 
 \begin{theorem}
-	$\mathbb{N}^\mathbb{N}$ is polish
+	$\mathbb{N}^\mathbb{N}$ is Polish
 \end{theorem}
 \begin{proof}
-	by $\mathbb{N}$ we always mean the natural numbers together with the discrete topology in which every subset is open. Since $\mathbb{N}$ is countable, seperability immediately follows
-	The discrete metric $d\left( m,n \right) = 1 - \delta_{mn} $, which equals is a complete metric on  $\mathbb{N}$.
-	In this metric the only Cauchy sequences are those that are eventually constant which obviously converge.
-	It now follows from \ref{products}, that the cartesian product $\mathbb{N}^{\mathbb{N}}$ is also Polish.
+By $\mathbb{N}$ we always mean the natural numbers together with the discrete topology in which every subset is open. Since $\mathbb{N}$ is countable, seperability immediately follows.
+The discrete metric $d\left( m,n \right) = 1 - \delta_{mn} $, which equals $1$ if  $n \neq m$ and $0$ if $n=m$, is a complete metric on  $\mathbb{N}$.
+In this metric the only Cauchy sequences are those that are eventually constant which obviously converge.
+It now follows from \ref{products}, that the cartesian product $\mathbb{N}^{\mathbb{N}}$ is also Polish.
 \end{proof}
 
 \begin{theorem}
-	$\left\{ 0,1 \right\}^\mathbb{N}$ is polish
+	$\left\{ 0,1 \right\}^\mathbb{N}$ is Polish
 \end{theorem}
 \begin{proof}
-	The proof for this is equivalent to that of $\mathbb{N}^{\mathbb{N}}$ being polish. We again choose the discrete topology and discrete metric on $\left\{ 0,1 \right\} $ and use \ref{products} to get that $\left\{ 0,1 \right\} ^{\mathbb{N}} $ is Polish.	
+	The proof for this is equivalent to that of $\mathbb{N}^{\mathbb{N}}$ being Polish. We again choose the discrete topology and discrete metric on $\left\{ 0,1 \right\} $ and use \ref{products} to get that $\left\{ 0,1 \right\} ^{\mathbb{N}} $ is Polish.	
 \end{proof}
 
 
 \begin{theorem}
-	Let $X$ be a nonempty Polish space. Then there is a continuous function $f: \mathbb{N}^\mathbb{N} \to X $, such that $f\left( \mathbb{N}^\mathbb{N} \right) = X$
+	Let $X$ be a nonempty Polish space. Then there exists a continuous function $f: \mathbb{N}^\mathbb{N} \to X $, such that $f\left( \mathbb{N}^\mathbb{N} \right) = X$
 \end{theorem}
 \begin{proof}
-Let $d$ be a complete metric on $X$. We want to construct a family of subsets $C_{(n_1,\ldots,n_k)}$ of X, 
+Let $d_X$ be a complete metric on $X$. We want to construct a family of subsets $C_{(n_1,\ldots,n_k)}$ of X, 
 with each index $\left( n_1,\ldots,n_k \right) $ being a finite sequence in $\mathbb{N}$.	
 We want each  $C_{n_1,\ldots,n_k}$ to have the following properties:
 
@@ -296,7 +295,22 @@ By the nested set theorem [cite] we can find a unique member $c_\alpha$ in the i
 We will define $f: \mathbb{N}^\mathbb{N} \to X$, $ \alpha \mapsto c_{\alpha}$.\\
 Surjectivity of $f$ follows immediately from properties  (3) and (4), since for any $ x \in X$ and any $C_{\left( n_1,\ldots,n_{k-1} \right) }$ we can always choose an $n_k$, such that  $x \in C_{\left( n_1,\ldots,n_k \right) }$. 
 So there exists a sequence $\alpha \in \mathbb{N}^\mathbb{N}$ with $f(\alpha) = x$.\\
-If $\alpha,\beta \in  \mathbb{N}^\mathbb{N}$ with $d_{\mathbb{N}^\mathbb{N}}\left( \alpha,\beta \right) \leq $ 
+We remember that the standard metric on $\mathbb{N}^\mathbb{N}$ is given by 
+\[d_{\mathbb{N}^\mathbb{N}} \left( \alpha, \beta \right) \coloneq \frac{1}{\inf\left\{ j \in \mathbb{N}: \alpha_j \neq \beta_j \right\} }\]
+
+Suppose $\alpha,\beta \in  \mathbb{N}^\mathbb{N}$ with $d_{\mathbb{N}^\mathbb{N}}\left( \alpha,\beta \right) \leq \frac{1}{k} $, so $\alpha_i = \beta_i$ for all  $i \in \left\{ 1,\ldots,k \right\} $.
+Then property (2) tells us that $d_X\left( f\left( \alpha \right), f\left( \beta \right)  \right) \leq \frac{1}{k}$ and thus f is continuous. 
+
+Now we only need to show that a construction that fulfils the above properties exists.
+We will do this by induction on k:
+
+Let $k=1$. Because  $X$ is seperable, we an find a sequence  $\left( \alpha_{n_1} \right)_{n_1 \in \mathbb{N}} $ whose terms are dense in $X$. 
+For each  $n_1 \in  \mathbb{N}$, let $C_{\left( n_1 \right) }$ be the closed ball with Radius $\frac{1}{2}$ around $\alpha_{n_1}$.
+Then $X = \bigcup_{n_1 \in  \mathbb{N}}$, so we do not need to worry about property (4) anymore. 
+(1) holds by construction and $diam \left( C_{\left( n_1 \right) } \right) = 1$, so (2) is also true. 
+
+Suppose now that the sets $C_{\left( n_1,\ldots,n_{k-1} \right) }$ have already been chosen and fulfil conditions (1)-(3).
+We can now apply the same process as before for each $C_{\left( n_1,\ldots,n_{k-1} \right) }$ instead of $X$ and letting each of the closed balls have Radius  $\frac{1}{2k}$. This yields us sets $C_{\left( n_1,\ldots,n_k \right) }, n_k \in \mathbb{N}$ which again by constrution agree with all required properties. 
 \end{proof}
 
 
@@ -308,7 +322,7 @@ If $\alpha,\beta \in  \mathbb{N}^\mathbb{N}$ with $d_{\mathbb{N}^\mathbb{N}}\lef
 
 
 \begin{theorem}
-	Let $A$ be a nonempty analytic subset of a polish space $X$. Then there exists continuous function $f: \mathbb{N}^{\mathbb{N}} \to X$, such that $f\left( \mathbb{N}^{\mathbb{N}} \right) = A$
+	Let $A$ be a nonempty Analytic subset of a Polish space $X$. Then there exists continuous function $f: \mathbb{N}^{\mathbb{N}} \to X$, such that $f\left( \mathbb{N}^{\mathbb{N}} \right) = A$
 \end{theorem}
 \begin{proof}
 	By definition, $A$ is the image of some Polish space $Z$ under a continuous function $f$. As was just shown,  $Z$ is the image of  $\mathbb{N}^\mathbb{N}$ under a continuous function $g$.
@@ -319,7 +333,7 @@ If $\alpha,\beta \in  \mathbb{N}^\mathbb{N}$ with $d_{\mathbb{N}^\mathbb{N}}\lef
 
 \section{Borel-gedöns}
 The class of sets maybe closest in nature to the Analytic sets are the Borel sets. 
-This of course is a natural consequence of the way analytic sets were discovered. 
+This of course is a natural consequence of the way Analytic sets were discovered. 
 In some sense, Analytic sets are a just a generalization of the Borel sets which are closed under projections. 
 We will try to formalise this notion as well as some other results about these two classes of sets in this section.
 
@@ -329,7 +343,7 @@ We will try to formalise this notion as well as some other results about these t
 
 
 \begin{theorem}
-	Let $B$ be a Borel subset of a Polish space X. Then B is analytic		
+	Let $B$ be a Borel subset of a Polish space X. Then B is Analytic		
 \end{theorem}
 
 
@@ -342,7 +356,7 @@ We will try to formalise this notion as well as some other results about these t
 \end{theorem}
 
 \begin{theorem}
-	Let $B$ be an uncountable Borel subset of a polish space  $X$. Then  $B$ contains a subset which is homeomorphic to  $\left\{ 0,1 \right\}^\mathbb{N}$
+	Let $B$ be an uncountable Borel subset of a Polish space  $X$. Then  $B$ contains a subset which is homeomorphic to  $\left\{ 0,1 \right\}^\mathbb{N}$
 	
 \end{theorem}
 
@@ -353,7 +367,7 @@ We will try to formalise this notion as well as some other results about these t
 
 
 \begin{theorem}
-	Let A be a subset of a polish space X. If $A$ and  $A^{C}$ are analytic, then $A$ ist Borel.  
+	Let A be a subset of a Polish space X. If $A$ and  $A^{C}$ are Analytic, then $A$ ist Borel.  
 \end{theorem}
 
 
@@ -367,10 +381,10 @@ We will try to formalise this notion as well as some other results about these t
 
 
 \begin{theorem}
-	Two Borel subsets of a polish space X are Borel isomorphic iff they have the same cardinality
+	Two Borel subsets of a Polish space X are Borel isomorphic iff they have the same cardinality
 \end{theorem}
 
-We have seen that all Borel sets are analytic, but have not yet said anything about the converse. So we turn to the foundational theorem, introduced by souslin, that makes this field of analytic sets worth studying:
+We have seen that all Borel sets are Analytic, but have not yet said anything about the converse. So we turn to the foundational theorem, introduced by souslin, that makes this field of Analytic sets worth studying:
 \begin{definition}[Universal set]
 	
 \end{definition}
@@ -385,9 +399,9 @@ We have seen that all Borel sets are analytic, but have not yet said anything ab
 
 
 \begin{example}
-	As almost all 'nice' sets are Borel, we can assume that most constructions of Analytic non-borelian sets are fairly complicated. 
-	One of the earliest such examples was provided in 1936 by polish mathematician Stefan Mazurkiewicz \cite{mazurkiewicz1936}:\\
-	Let $\mathbb{R}^I$ denote the space of real-valued functions, which are continuous in the closed interval $I \coloneq[0,1]$. Let  $\Gamma$ be the set of functions  $f \in \mathbb{R}^I$, which are differentiable in $I$. This set is Co-analytic, meaning it is the complement of an analytic set, but is itself not analytic. 
+	As almost all 'nice' sets are Borel, we can assume that most constructions of Analytic non-Borelian sets are fairly complicated. 
+	One of the earliest such examples was provided in 1936 by Polish mathematician Stefan Mazurkiewicz \cite{mazurkiewicz1936}:\\
+	Let $\mathbb{R}^I$ denote the space of real-valued functions, which are continuous in the closed interval $I \coloneq[0,1]$. Let  $\Gamma$ be the set of functions  $f \in \mathbb{R}^I$, which are differentiable in $I$. This set is Co-Analytic, meaning it is the complement of an Analytic set, but is itself not Analytic. 
 	Thus, its complement cannot be Borel (or $\Gamma$ would be Borel as well, and thus Analytic, leading to a contradiction). \\
 	The proof of this is however is rather long and technical and beyond the scope of this thesis.
 	
@@ -411,7 +425,7 @@ We have seen that all Borel sets are analytic, but have not yet said anything ab
 \end{theorem}
 
 \begin{theorem}
-	Let $B$ be an analytic subset of a polish space $X$. Then $B$ is universally measurable.
+	Let $B$ be an Analytic subset of a Polish space $X$. Then $B$ is universally measurable.
 \end{theorem}
 
 \begin{theorem}
@@ -426,7 +440,7 @@ We have seen that all Borel sets are analytic, but have not yet said anything ab
 \end{definition}
 
 \begin{theorem}
-	Let X,A be analytic meas. space, Y polish, f measurable then f(A) analytic.
+	Let X,A be Analytic meas. space, Y Polish, f measurable then f(A) Analytic.
 \end{theorem}
 
 
@@ -450,7 +464,7 @@ We have seen that all Borel sets are analytic, but have not yet said anything ab
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\section{K-analytic sets??? prettyprettyplease?}
+\section{K-Analytic sets??? prettyprettyplease?}
 
 
 

@@ -2370,7 +2370,8 @@
     <bcf:citekey order="7" intorder="1">rogers1980</bcf:citekey>
     <bcf:citekey order="8" intorder="1">cohn2013</bcf:citekey>
     <bcf:citekey order="9" intorder="1">kaplansky2001</bcf:citekey>
-    <bcf:citekey order="10" intorder="1">mazurkiewicz1936</bcf:citekey>
+    <bcf:citekey order="10" intorder="1">kaplansky2001</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">mazurkiewicz1936</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="anyt">
