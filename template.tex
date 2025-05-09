@@ -94,7 +94,7 @@
 
 \newpage
 
-%\thispagestyle{empty}
+\thispagestyle{empty}
 \tableofcontents
 
 \newpage
@@ -116,7 +116,7 @@ As it is so often the case with new and interesting discoveries, mathematical ar
 One prime example of this phenomenon is the field of Analytic sets. 
 Studying it provides us, next to some important results in areas such as descriptive set theory, probability theory and functional analysis with a deeper understanding of the way mathematics is done in practice.
 
-Our story starts in the Year 1905 with famous Frensch mathematician Henri Lebesgue and his paper "Sur les fonctions représentables analytiquement" \cite{lebesgue1905}. 
+Our story starts in the Year 1905 with famous Frensch(!) mathematician Henri Lebesgue and his paper "Sur les fonctions représentables analytiquement" \cite{lebesgue1905}. 
 In it, Lebesgue proved many statements of great importance. 
 He did however also include one small remark which stated, without proof, that the Borel sets are closed under projections. \\
 About 10 years later, Russian mathematician Nikolai Luzin ordered his student Mikhail Souslin to study Lebesgues paper. 
@@ -361,7 +361,7 @@ We will try to formalise this notion as well as some other results about these t
 \end{theorem}
 
 
-\begin{theorem}[Separation theorem]
+\begin{theorem}[Luzins Separation theorem]
 	.
 \end{theorem}
 
@@ -386,7 +386,10 @@ We will try to formalise this notion as well as some other results about these t
 
 We have seen that all Borel sets are Analytic, but have not yet said anything about the converse. So we turn to the foundational theorem, introduced by souslin, that makes this field of Analytic sets worth studying:
 \begin{definition}[Universal set]
-	
+Let $X$ be a Polish space. 
+We will denote the Analytic subsets of $X$ by $\mathcal{A}\left( X \right) $. 
+Let $U$ be a subset of $\mathbb{N}^\mathbb{N} \times X $. 
+We call $U$ universal for  $\mathcal{A}\left( X \right) $, if $U \subset \mathcal{A}\left( \mathbb{N}^\mathbb{N} \times X \right) $ and $\left\{ U_{\alpha}\colon \alpha \in \mathbb{N}^\mathbb{N} \right\} $. 
 \end{definition}
 
 \begin{theorem}[Souslin]
