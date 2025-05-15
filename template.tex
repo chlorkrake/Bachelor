@@ -1,4 +1,4 @@
-
+\synctex=1
 
 \documentclass[10pt, a4paper, titlepage]{article}
 
@@ -10,6 +10,7 @@
 \usepackage[english]{babel}
 \usepackage{csquotes}
 \usepackage[parfill]{parskip} 
+%\usepackage{hyperref}
 % Bibliographie -----------------------------------------
 \usepackage[backend=biber,
 			style=alphabetic,
@@ -73,8 +74,8 @@
 
 % Hyperref (immer am Schluss der Präambel!) -------------
 \usepackage[pdftex,pdfpagelabels]{hyperref}
-\hypersetup{pdftitle={Beweis des Satz von Thales},
-			pdfauthor={Maxime Musterfrau}}
+\hypersetup{pdftitle={Analytic sets},
+			pdfauthor={Charlie Ahrendts}}
 % -------------------------------------------------------
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -177,7 +178,7 @@ Throughout this section, we will use some standard results about topological and
 \end{corollary}
 
 \begin{theorem}[Cantor's nested set theorem]
-	
+	Let $A_1 \subset A_2 \subset \ldots$ a sequence of decreasing nonempty closed subsets of a Polish space $X$. Then  $\bigcap_{i \in  \mathbb{N}} A_i $ is nonempty. [cite]
 \end{theorem}
 
 With this out of the way, we can start proving some fundamental facts about Polish spaces and Analytic sets. 
@@ -225,9 +226,9 @@ so  $X$ is a seperable metrisable space and thus Polish.
 \end{corollary}
 \begin{proof}
 	Let $X$ be a Polish space, $A$ an open or closed subset of $X$.
-	By Corollary \ref{second_countable}, $X$ has a countable basis of open sets for its Topology. Then the restrictions of those sets to  $A$ form  a countable basis for the subspace topology on $A$. 
+	By \autoref{second_countable}, $X$ has a countable basis of open sets for its Topology. Then the restrictions of those sets to  $A$ form  a countable basis for the subspace topology on $A$. 
 By the same equivalence, we get seperability of  $A$.\\
-If $A$ is closed, it is according to Corollary \ref{closed_cc} completely metrizable by any complete metric on $X$, resticted to  $A$.\\
+If $A$ is closed, it is according to \autoref{closed_cc} completely metrizable by any complete metric on $X$, resticted to  $A$.\\
 Now only the case of  $A$ being an open subset of  $X$ remains.
 Let  \[
 d_0 \left( x,y \right)  \coloneq d\left( x,y \right) + \left| \frac{1}{d\left( x,A^{C} \right) } - \frac{1}{d\left( y,A^C \right) } \right| 
@@ -243,6 +244,7 @@ So the limit $x$ has to be in  $A$, making it complete under $d_0$ and thus Poli
 
 
 \begin{theorem}
+	\label{open_closed_cc}
 	Open and closed subsets of Polish spaces are Analytic
 \end{theorem}
 
@@ -263,22 +265,59 @@ We will see that the Polish space $Z$ in our definition of Analytic set can alwa
 By $\mathbb{N}$ we always mean the natural numbers together with the discrete topology in which every subset is open. Since $\mathbb{N}$ is countable, seperability immediately follows.
 The discrete metric $d\left( m,n \right) = 1 - \delta_{mn} $, which equals $1$ if  $n \neq m$ and $0$ if $n=m$, is a complete metric on  $\mathbb{N}$.
 In this metric the only Cauchy sequences are those that are eventually constant which obviously converge.
-It now follows from \ref{products}, that the cartesian product $\mathbb{N}^{\mathbb{N}}$ is also Polish.
+It now follows from \autoref{products}, that the cartesian product $\mathbb{N}^{\mathbb{N}}$ is also Polish.
 \end{proof}
 
 \begin{theorem}
 	$\left\{ 0,1 \right\}^\mathbb{N}$ is Polish
 \end{theorem}
 \begin{proof}
-	The proof for this is equivalent to that of $\mathbb{N}^{\mathbb{N}}$ being Polish. We again choose the discrete topology and discrete metric on $\left\{ 0,1 \right\} $ and use \ref{products} to get that $\left\{ 0,1 \right\} ^{\mathbb{N}} $ is Polish.	
+	The proof for this is equivalent to that of $\mathbb{N}^{\mathbb{N}}$ being Polish. We again choose the discrete topology and discrete metric on $\left\{ 0,1 \right\} $ and use \autoref{products} to get that $\left\{ 0,1 \right\} ^{\mathbb{N}} $ is Polish.	
 \end{proof}
 
+
+
+Throughout the next few chapters, the space $\mathbb{N}^\mathbb{N}$ will show up
+over and over again. So it makes sense to devote a bit of time now to go over
+some of the important properties of that space.
+
+Another space that ist going to be important, is that of only the finite integer
+sequences. 
+We will call this space $\mathbb{N}^{<\mathbb{N}}$
+
+When talking about $\mathbb{N}^\mathbb{N}$, we always view it as posessing the
+product topology, where every copy of $\mathbb{N}$ is equipped with the discrete
+topology. 
+Since the singletons $\left\{ n \right\} $ form a basis for the discrete
+topology on $\mathbb{N}$, a Basis for our Product topology is given by sets of
+the form $N_s \coloneq \left\{\alpha \in \mathbb{N}^\mathbb{N} : \alpha_{|n} =
+s \right\}$. 
+Here, $s \in \mathbb{N}^{<\mathbb{N}}$ is a finite sequence of
+length $n$ and
+$\alpha_{|n}$ denotes the sequence that is obtained by only taking the first $n$
+terms of  $\alpha$.
+
+In \autoref{products}, we have already seen that it is possible to construct a metric for a
+product of Polish spaces.
+The metric we will be choosing for $\mathbb{N}^\mathbb{N}$ is the following:
+\[
+	d\left( \alpha,\beta \right) \coloneq \frac{1}{2^k} \text{ where }
+	k\coloneq \min\left\{i: \alpha_i \neq \beta_i\right\}
+.\] 
+
+It is easy to see that the open Balls with radius $\varepsilon$ around an
+element $\alpha$ consist exactly of those sequences, that share the first $n$
+terms with $\alpha$, where  $\frac{1}{2^n} < \varepsilon$. 
+But these are exactly the Basis elements of the Product topology we constructed
+earlier. 
+So the topology induced by $d$ coincedes with the product topology on
+$\mathbb{N}^\mathbb{N}$.
 
 \begin{theorem}
 	Let $X$ be a nonempty Polish space. Then there exists a continuous function $f: \mathbb{N}^\mathbb{N} \to X $, such that $f\left( \mathbb{N}^\mathbb{N} \right) = X$
 \end{theorem}
 \begin{proof}
-Let $d_X$ be a complete metric on $X$. We want to construct a family of subsets $C_{(n_1,\ldots,n_k)}$ of X, 
+Set $d_X$ be a complete metric on $X$. We want to construct a family of subsets $C_{(n_1,\ldots,n_k)}$ of X, 
 with each index $\left( n_1,\ldots,n_k \right) $ being a finite sequence in $\mathbb{N}$.	
 We want each  $C_{n_1,\ldots,n_k}$ to have the following properties:
 
@@ -331,6 +370,12 @@ We can now apply the same process as before for each $C_{\left( n_1,\ldots,n_{k-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+
+
+
+
+
+
 \section{Borel-gedöns}
 The class of sets maybe closest in nature to the Analytic sets are the Borel sets. 
 This of course is a natural consequence of the way Analytic sets were discovered. 
@@ -338,42 +383,67 @@ In some sense, Analytic sets are a just a generalization of the Borel sets which
 We will try to formalise this notion as well as some other results about these two classes of sets in this section.
 
 \begin{definition}[Borel set]
-	We call a subset of a topological space Borel, if it is a member of $\mathcal{B}$, the $\sigma-$Algebra generated by the open sets
+	We call a subset of a topological space Borel, if it is a member of $\mathcal{B}$, the $\sigma-$Algebra generated by the open sets.
 \end{definition}
+
+So any Borel set can be formed via taking countable unions, countable intersections and complements of Open sets.
 
 
 \begin{theorem}
 	Let $B$ be a Borel subset of a Polish space X. Then B is Analytic		
 \end{theorem}
-
+\begin{proof}
+	
+\end{proof}
 
 \begin{definition}[Zero-Dimensional space?]
-	.	
+	We call a topological space zero-dimensional, if its topology has a basis that consists only of clopen sets.
 \end{definition}
 
 \begin{theorem}
 	Let B be a Borel subset of a Polish space X. Then there exists a zero-dimensional space Z, such that $f(Z) = B$
 \end{theorem}
+\begin{proof}
+	
+\end{proof}
+
 
 \begin{theorem}
 	Let $B$ be an uncountable Borel subset of a Polish space  $X$. Then  $B$ contains a subset which is homeomorphic to  $\left\{ 0,1 \right\}^\mathbb{N}$
 	
 \end{theorem}
+\begin{proof}
+	
+\end{proof}
+
+
+\begin{definition}[Borel seperable]
+	Let $A_1$ and  $A_2$ be arbitrary subsets of a Polish space $X$. We call them Borel seperable if there exists  $B_1,B_2 \in \mathcal{B}\left( X \right) $, such that $B_1 \cap B_2 = \emptyset$ and $A_1 \subset B_1$, $A_2 \subset B_2$ 
+\end{definition}
 
 
 \begin{theorem}[Luzins Separation theorem]
-	.
+	\label{separation_thm}
+	Disjoint Analytic subsets can be separated by Borel sets.
 \end{theorem}
-
+\begin{proof}
+	
+\end{proof}
 
 \begin{theorem}
 	Let A be a subset of a Polish space X. If $A$ and  $A^{C}$ are Analytic, then $A$ ist Borel.  
 \end{theorem}
-
+\begin{proof}
+	$A$ and  $A^C$ are disjoint analytic subsets of $X$. 
+	So by  \autoref{separation_thm}, there exist disjoined Borel sets  $B_1$ and $B_2$ separating $A$ and $A^C$. 
+	But since $A \cup A^C = X$,  $B_1$ and $B_2$ have to equal $A$ and $A^C$, so  $A$ is Borel.
+\end{proof}
 
 \begin{theorem}
 	There exists.
 \end{theorem}
+
+
 
 \begin{definition}[Borel isomorphic]
 	We call two Borel subsets $A,B$ of a Polish space X Borel isomorphic, if there exists a bijective, Borel measurable function $f: A \to B$
@@ -383,26 +453,111 @@ We will try to formalise this notion as well as some other results about these t
 \begin{theorem}
 	Two Borel subsets of a Polish space X are Borel isomorphic iff they have the same cardinality
 \end{theorem}
+\begin{proof}
+	
+\end{proof}
+
 
 We have seen that all Borel sets are Analytic, but have not yet said anything about the converse. So we turn to the foundational theorem, introduced by souslin, that makes this field of Analytic sets worth studying:
 \begin{definition}[Universal set]
 Let $X$ be a Polish space. 
-We will denote the Analytic subsets of $X$ by $\mathcal{A}\left( X \right) $. 
+Let $\Gamma\left( X \right) $ be any class of sets in $X$, such as open, closed, Borel or Analytic. 
 Let $U$ be a subset of $\mathbb{N}^\mathbb{N} \times X $. 
-We call $U$ universal for  $\mathcal{A}\left( X \right) $, if $U \subset \mathcal{A}\left( \mathbb{N}^\mathbb{N} \times X \right) $ and $\left\{ U_{\alpha}\colon \alpha \in \mathbb{N}^\mathbb{N} \right\} $. 
+We call $U$ universal for  $\Gamma\left( X \right) $, 
+if $U \subset \Gamma\left( \mathbb{N}^\mathbb{N} \times X \right) $ and $\left\{ U_{\alpha}\colon \alpha \in \mathbb{N}^\mathbb{N} \right\} = \Gamma\left( X \right) $. See \cite{kechris1995}
 \end{definition}
+\begin{remark}
+	
+We will denote the Analytic subsets of $X$ by $\mathcal{A}\left( X \right) $. 
+\end{remark}
 
 \begin{theorem}[Souslin]
-	There exist Analytic sets which are not Borel sets. 
+	There exist Analytic sets in $\mathbb{N}^\mathbb{N}$ which are not Borel sets. See \cite{kechris1995}, \cite{cohn2013}
 \end{theorem}
 \begin{proof}
-	[Kechris p.85]
+We will start by constructing a universal set for the open sets in $\mathbb{N}^\mathbb{N}$. 
+Remember that open balls in $\mathbb{N}^\mathbb{N}$ are sets of the form $N_s \coloneq \left\{ \alpha \in \mathbb{N}^\mathbb{N} : \alpha_{|n} = s \right\} $ for any finite sequence of length n. 
+[does this notation make sense?]
+
+First, we enumerate the countable space $\mathbb{N}^{<\mathbb{N}}$ in a sequence $\left( s_n \right)_{n \in \mathbb{N}} $.
+We can define $U\coloneq \left\{ \left( \alpha,\beta \right) \in \mathbb{N}^\mathbb{N} \times \mathbb{N}^\mathbb{N}: \beta \in \bigcup_{i \in  \mathbb{N}} N_{s_i}: \alpha_i = 0 \right\} $
+
+Then the sections are the sets $U_{\alpha} = \bigcup_{i \in \mathbb{N}: \alpha_i = 0}  N_{s_i}$.
+Since these are Unions of open sets, they are open. 
+Further, every open Ball $N_{s_i}$ can be written as a $U_\alpha$, by choosing $\alpha$ in a way where only  $\alpha_i =0$ and  $\alpha_j \neq 0 $ for  $j \neq i$.
+Thus $U$ is universal for the open sets in  $\mathbb{N}^\mathbb{N}$ [Stimmt das so?].
+
+We know that ${\mathbb{N}^\mathbb{N}}^2 = \mathbb{N}^\mathbb{N} \times \mathbb{N}^\mathbb{N}$ [Welche Notation finden wir besser?] is homeomorphic to  $\mathbb{N}^\mathbb{N}$.
+So $U$ will be homeomorphic to a universal set for the open sets in  $\mathbb{N}^\mathbb{N} \times \mathbb{N}^\mathbb{N}$.
+If we take the complement of that set, we will arrive at a
+universal set $F \subset \mathbb{N}^\mathbb{N} \times \mathbb{N}^\mathbb{N}
+\times \mathbb{N}^\mathbb{N}$ for the closed sets in $\mathbb{N}^\mathbb{N}$. 
+
+Let us define a new set $M \coloneq \left\{ \left( \alpha,\beta \right) \in
+\mathbb{N}^\mathbb{N} \times \mathbb{N}^\mathbb{N} : \exists \gamma \in
+\mathbb{N}^\mathbb{N}: \left( \alpha, \beta, \gamma \right) \in F  \right\}  $.
+We claim that $M$ is universal for the Analytic subsets of
+$\mathbb{N}^\mathbb{N}$.
+By construction, $M$ is the projection of $F$ onto the first 2 coordinates and
+so as a continuous image of a closed subset of a Polish space it is Analytic
+[\autoref{open_closed_cc}]. 
+By extension, the sections $M_{\alpha}$ are also Analytic.
+
+Suppose on the contrary, that $A$ is a nonempty Analytic subset of $\mathbb{N}^\mathbb{N}$.
+Then $A$ is the continuous image of  $\mathbb{N}^\mathbb{N}$ under some function
+$f$ [ref].  
+The Graph $Gr\left( f \right) \coloneq \left\{ \left( \alpha, f\left( \alpha
+\right)  \right)  \right\} $ is closed in $\mathbb{N}^\mathbb{N} \times
+\mathbb{N}^\mathbb{N}$ and its Projection on the second component is $A$.
+Let $G \coloneq \left\{ \left( f\left( \beta\right), \beta \right) : \beta
+\in \mathbb{N}^\mathbb{N} \right\} $. 
+Then $\beta \in A \iff \exists \gamma \in \mathbb{N}^\mathbb{N}: \left( \beta,
+\gamma \right) \in G $.
+
+Since $G$ is closed and $F$ is universal for the closed sets in
+$\mathbb{N}^\mathbb{N}$, there exists an $\alpha$ such that  $G = F_{\alpha}$.
+But then $M_\alpha = \left\{ \beta : \exists \gamma: \left( \alpha, \beta,
+\gamma \right) \in F \right\} = \left\{ \beta: \exists \gamma: \left(
+\beta,\gamma \right) \in G \right\} = A $. 
+If $A$ is empty, the same argument holds, but we view  $A$ as the image of the
+empty set instead of  $\mathbb{N}^\mathbb{N}$.
+So the set $M$ is universal for the
+Analytic subsets of $\mathbb{N}^\mathbb{N}.$
+
+If we can now find an Analytic set whose complement is not Analytic, we are
+finished with the proof.
+So let $S \coloneq \left\{ \alpha \in \mathbb{N}^\mathbb{N}: \left( \alpha,
+\alpha \right) \in M \right\} $. 
+Then $S$ is the Projection on the first component of  $A \cap \left\{ \left( \alpha,
+\alpha \right) \in  \mathbb{N}^\mathbb{N} \times \mathbb{N}^\mathbb{N}
+\right\}$. Since we are in a metrizable space, the diagonal is closed and in
+particular Analytic. So $A \cap \left\{ \left( \alpha, \alpha \right) \in
+\mathbb{N}^\mathbb{N} \times \mathbb{N}^\mathbb{N} \right\} $ is Analytic as
+well and because we know that the Analytic sets are closed under projections,
+[ref] $S$ has to be Analytic. 
+Suppose that $S$ is also Borel. Then $S^C$ is also Borel so by extension
+Analytic, so $\exists \beta \in \mathbb{N}^\mathbb{N}$ such that $S^C =
+M_{\beta}$.
+
+Suppose that $\beta \in S$. By definition of $S$  $\left( \beta,\beta \right)
+\in M $, but then $\beta \in M_{\beta} = S^C$.
+If on the other hand $\beta \in S^C = M_{\beta}$, it follows that $\left(
+\beta,\beta \right) \in M$, so $\beta \in S$.
+
+In either case, we have arrived at a contradiction and with that, we have found an
+Analytic set, which cannot be Borel.
 \end{proof}
 
+Souslins original result was not just limited to $\mathbb{N}^\mathbb{N}$ however.
+Since every uncountable Polish space contains a hoeomorphic copy of $\mathbb{N}^\mathbb{N}$, 
+it immediately follows that there exist Analytic, 
+non-Borel sets in every uncountable Polish space $X$.
 
-
+If we think back to the history we dicussed at the beginning of this thesis, we
+can see that this is the exact result that disproved Lebesgues claim in his 1905
+paper.
 \begin{example}
-	As almost all 'nice' sets are Borel, we can assume that most constructions of Analytic non-Borelian sets are fairly complicated. 
+	As almost all `nice' sets are Borel, we can assume that most constructions of Analytic non-Borelian sets are fairly complicated. 
 	One of the earliest such examples was provided in 1936 by Polish mathematician Stefan Mazurkiewicz \cite{mazurkiewicz1936}:\\
 	Let $\mathbb{R}^I$ denote the space of real-valued functions, which are continuous in the closed interval $I \coloneq[0,1]$. Let  $\Gamma$ be the set of functions  $f \in \mathbb{R}^I$, which are differentiable in $I$. This set is Co-Analytic, meaning it is the complement of an Analytic set, but is itself not Analytic. 
 	Thus, its complement cannot be Borel (or $\Gamma$ would be Borel as well, and thus Analytic, leading to a contradiction). \\
@@ -426,17 +581,25 @@ We call $U$ universal for  $\mathcal{A}\left( X \right) $, if $U \subset \mathca
 \begin{theorem}
 	Every finite Borel measure on Polish space is regular
 \end{theorem}
-
+\begin{proof}
+	
+\end{proof}
 \begin{theorem}
 	Let $B$ be an Analytic subset of a Polish space $X$. Then $B$ is universally measurable.
 \end{theorem}
+\begin{proof}
+	
+\end{proof}
+
 
 \begin{theorem}
 	Let $(X,\mathcal{A})$,  $\left( Y, \mathcal{B} \right) $ be measurable spaces, that is, spaces endowed with a $\sigma$-Algebra.  
 	Let $\mathcal{A}_*$ and $\mathcal{B}_*$ be the $\sigma$-Algebras of universally measurable sets.
 	If  $f:X \to Y$ is  $\mathcal{A}- \mathcal{B}$-measurable, then it is also $\mathcal{A}_*-\mathcal{B}_*$-measurable
 \end{theorem}
-
+\begin{proof}
+	
+\end{proof}
 
 \begin{definition}[Analytic space]
 	
@@ -445,7 +608,9 @@ We call $U$ universal for  $\mathcal{A}\left( X \right) $, if $U \subset \mathca
 \begin{theorem}
 	Let X,A be Analytic meas. space, Y Polish, f measurable then f(A) Analytic.
 \end{theorem}
-
+\begin{proof}
+	
+\end{proof}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -459,7 +624,7 @@ We call $U$ universal for  $\mathcal{A}\left( X \right) $, if $U \subset \mathca
 \subsection{Luzins construction ??}
 [Sur les ensembles analytiques]
 
-
+\subsection{MEINE FUCKING BÄUME ELIAAAAS!!!!!}
 
 
  \subsection{Projections}
@@ -467,7 +632,7 @@ We call $U$ universal for  $\mathcal{A}\left( X \right) $, if $U \subset \mathca
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\section{K-Analytic sets??? prettyprettyplease?}
+\section{K-Analytic sets or Projective hierarchy. prettyprettyplease?}
 
 
 

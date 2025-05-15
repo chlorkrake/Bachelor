@@ -85,6 +85,39 @@
       \verb https://books.google.com.ng/books?id=FbKhAQAAQBAJ
       \endverb
     \endentry
+    \entry{kechris1995}{book}{}
+      \name{author}{1}{}{%
+        {{hash=a32e3914290032052ba9f6492929163d}{%
+           family={Kechris},
+           familyi={K\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer New York}%
+      }
+      \strng{namehash}{a32e3914290032052ba9f6492929163d}
+      \strng{fullhash}{a32e3914290032052ba9f6492929163d}
+      \strng{bibnamehash}{a32e3914290032052ba9f6492929163d}
+      \strng{authorbibnamehash}{a32e3914290032052ba9f6492929163d}
+      \strng{authornamehash}{a32e3914290032052ba9f6492929163d}
+      \strng{authorfullhash}{a32e3914290032052ba9f6492929163d}
+      \field{labelalpha}{Kec95}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781461241904}
+      \field{series}{Graduate Texts in Mathematics}
+      \field{title}{Classical Descriptive Set Theory}
+      \field{year}{1995}
+      \verb{urlraw}
+      \verb https://books.google.at/books?id=WR3SBwAAQBAJ
+      \endverb
+      \verb{url}
+      \verb https://books.google.at/books?id=WR3SBwAAQBAJ
+      \endverb
+    \endentry
     \entry{lebesgue1905}{article}{}
       \name{author}{1}{}{%
         {{hash=eef80c379c101c77c3cc89233f729a65}{%

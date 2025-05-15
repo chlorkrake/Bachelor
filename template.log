@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.1.25)  9 MAY 2025 22:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.1.25)  15 MAY 2025 19:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -635,43 +635,43 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'english'.
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 83.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 84.
  (/usr/share/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (./template.aux)
 \openout1 = `template.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Info: Redefining \microtypecontext on input line 83.
-Package microtype Info: Applying patch `item' on input line 83.
-Package microtype Info: Applying patch `toc' on input line 83.
-Package microtype Info: Applying patch `eqnum' on input line 83.
-Package microtype Info: Applying patch `footnote' on input line 83.
-Package microtype Info: Applying patch `verbatim' on input line 83.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Info: Redefining \microtypecontext on input line 84.
+Package microtype Info: Applying patch `item' on input line 84.
+Package microtype Info: Applying patch `toc' on input line 84.
+Package microtype Info: Applying patch `eqnum' on input line 84.
+Package microtype Info: Applying patch `footnote' on input line 84.
+Package microtype Info: Applying patch `verbatim' on input line 84.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 83.
+LaTeX Info: Redefining \showhyphens on input line 84.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -691,8 +691,8 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'template.bbl' found.
  (./template.bbl)
-Package biblatex Info: Reference section=0 on input line 83.
-Package biblatex Info: Reference segment=0 on input line 83.
+Package biblatex Info: Reference section=0 on input line 84.
+Package biblatex Info: Reference segment=0 on input line 84.
  (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count429
@@ -712,14 +712,14 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 83.
+Package hyperref Info: Link coloring OFF on input line 84.
  (./template.out) (./template.out)
 \@outlinefile=\write4
 \openout4 = `template.out'.
 
-Package hyperref Info: Option `pageanchor' set `false' on input line 86.
+Package hyperref Info: Option `pageanchor' set `false' on input line 87.
  (./content/titlepage.tex
-<./content/Uni_Logo_2016_SW.jpg, id=40, 481.8pt x 240.9pt>
+<./content/Uni_Logo_2016_SW.jpg, id=44, 481.8pt x 240.9pt>
 File: ./content/Uni_Logo_2016_SW.jpg Graphic file (type jpg)
 <use ./content/Uni_Logo_2016_SW.jpg>
 Package pdftex.def Info: ./content/Uni_Logo_2016_SW.jpg  used on input line 5.
@@ -766,7 +766,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/usr/share/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-Overfull \hbox (58.58235pt too wide) in paragraph at lines 47--64
+Overfull \hbox (9.95767pt too wide) in paragraph at lines 47--64
 [] 
  []
 
@@ -777,26 +777,31 @@ Overfull \hbox (58.58235pt too wide) in paragraph at lines 47--64
 \openout5 = `template.toc'.
 
  [2]
-Package hyperref Info: Option `pageanchor' set `true' on input line 102.
+Package hyperref Info: Option `pageanchor' set `true' on input line 103.
  [1]
-Package hyperref Info: bookmark level for unknown definition defaults to 0 on input line 152.
-Package hyperref Info: bookmark level for unknown remark defaults to 0 on input line 157.
-Package hyperref Info: bookmark level for unknown corollary defaults to 0 on input line 171.
+Package hyperref Info: bookmark level for unknown definition defaults to 0 on input line 153.
+Package hyperref Info: bookmark level for unknown remark defaults to 0 on input line 158.
+Package hyperref Info: bookmark level for unknown corollary defaults to 0 on input line 172.
  [2{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}]
-Package hyperref Info: bookmark level for unknown theorem defaults to 0 on input line 179.
-Package hyperref Info: bookmark level for unknown lemma defaults to 0 on input line 185.
+Package hyperref Info: bookmark level for unknown theorem defaults to 0 on input line 180.
+Package hyperref Info: bookmark level for unknown lemma defaults to 0 on input line 186.
 
-Underfull \hbox (badness 10000) in paragraph at lines 189--199
+Underfull \hbox (badness 10000) in paragraph at lines 190--200
 
  []
 
 [3{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}] [4] [5] [6]
-Package hyperref Info: bookmark level for unknown example defaults to 0 on input line 405.
- [7]
+Overfull \hbox (12.54706pt too wide) in paragraph at lines 394--395
+\T1/lmr/bx/n/10 (-20) Definition \T1/lmr/m/n/10 (-20) (Ze-ro-Di-men-sional space?)\T1/lmr/bx/n/10 (-20) . \T1/lmr/m/n/10 (-20) We call a topo-log-i-cal space zero-dimensional,
+ []
+
+[7] [8] [9]
+Package hyperref Info: bookmark level for unknown example defaults to 0 on input line 554.
+ [10]
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmr/m/sc/10'.
 (microtype)             Ignoring protrusion settings for this character.
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 504.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 663.
  (/usr/share/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -804,30 +809,30 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [8] [9] (./template.aux)
+ [11] [12] (./template.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `template.out' has not changed.
-(rerunfilecheck)             Checksum: 5505F5F96A595F692DEC1250276A14AC;1416.
+(rerunfilecheck)             Checksum: 585F0255C63D11E9495E9B7400EAD814;1770.
 Package logreq Info: Writing requests to 'template.run.xml'.
 \openout1 = `template.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 22403 strings out of 476023
- 390824 string characters out of 5791582
+ 22461 strings out of 476023
+ 391660 string characters out of 5791582
  1941187 words of memory out of 5000000
- 43954 multiletter control sequences out of 15000+600000
- 627701 words of font info for 159 fonts, out of 8000000 for 9000
+ 43969 multiletter control sequences out of 15000+600000
+ 635184 words of font info for 178 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  66i,9n,81p,1005b,1868s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr5.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy5.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on template.pdf (12 pages, 617102 bytes).
+Output written on template.pdf (15 pages, 636820 bytes).
 PDF statistics:
- 335 PDF objects out of 1000 (max. 8388607)
- 272 compressed objects within 3 object streams
- 86 named destinations out of 1000 (max. 500000)
- 39502 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 365 PDF objects out of 1000 (max. 8388607)
+ 299 compressed objects within 3 object streams
+ 93 named destinations out of 1000 (max. 500000)
+ 43606 words of extra memory for PDF output out of 51595 (max. 10000000)
 
