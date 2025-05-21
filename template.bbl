@@ -362,6 +362,39 @@
       \endverb
       \keyw{set theory}
     \endentry
+    \entry{srivastava1998}{book}{}
+      \name{author}{1}{}{%
+        {{hash=2b0f186fcd4cedbb1e2eedd2e04401bd}{%
+           family={Srivastava},
+           familyi={S\bibinitperiod},
+           given={S.M.},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer New York}%
+      }
+      \strng{namehash}{2b0f186fcd4cedbb1e2eedd2e04401bd}
+      \strng{fullhash}{2b0f186fcd4cedbb1e2eedd2e04401bd}
+      \strng{bibnamehash}{2b0f186fcd4cedbb1e2eedd2e04401bd}
+      \strng{authorbibnamehash}{2b0f186fcd4cedbb1e2eedd2e04401bd}
+      \strng{authornamehash}{2b0f186fcd4cedbb1e2eedd2e04401bd}
+      \strng{authorfullhash}{2b0f186fcd4cedbb1e2eedd2e04401bd}
+      \field{labelalpha}{Sri98}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780387984124}
+      \field{series}{Graduate Texts in Mathematics}
+      \field{title}{A Course on Borel Sets}
+      \field{year}{1998}
+      \verb{urlraw}
+      \verb https://books.google.at/books?id=FhYGYJtMwcUC
+      \endverb
+      \verb{url}
+      \verb https://books.google.at/books?id=FhYGYJtMwcUC
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

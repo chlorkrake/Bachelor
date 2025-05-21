@@ -2,10 +2,10 @@
 \contentsline {section}{\numberline {1}A short history lesson}{ 1 }{section.1}%
 \contentsline {section}{\numberline {2}Polish spaces and Analytic sets}{ 2 }{section.2}%
 \contentsline {section}{\numberline {3}Borel-gedöns}{ 7 }{section.3}%
-\contentsline {section}{\numberline {4}Measurability}{ 10 }{section.4}%
-\contentsline {section}{\numberline {5}Alternative description}{ 11 }{section.5}%
-\contentsline {subsection}{\numberline {5.1}Souslin operation}{ 11 }{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Luzins construction ??}{ 11 }{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}MEINE FUCKING BÄUME ELIAAAAS!!!!!}{ 11 }{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}Projections}{ 11 }{subsection.5.4}%
-\contentsline {section}{\numberline {6}K-Analytic sets or Projective hierarchy. prettyprettyplease?}{ 11 }{section.6}%
+\contentsline {section}{\numberline {4}Measurability}{ 11 }{section.4}%
+\contentsline {section}{\numberline {5}Alternative constructions}{ 12 }{section.5}%
+\contentsline {subsection}{\numberline {5.1}Souslin operation}{ 12 }{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Trees}{ 12 }{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Luzins construction ??}{ 12 }{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Projections}{ 12 }{subsection.5.4}%
+\contentsline {section}{\numberline {6}K-Analytic sets or Projective hierarchy maybe?}{ 12 }{section.6}%

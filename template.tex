@@ -33,7 +33,7 @@
 \usepackage{euscript}
 \numberwithin{equation}{section}
 \usepackage{mathtools}
-
+\usepackage{mathrsfs}
 % Theorem-Umgebungen ------------------------------------
 \usepackage{thmtools}
 
@@ -117,7 +117,7 @@ As it is so often the case with new and interesting discoveries, mathematical ar
 One prime example of this phenomenon is the field of Analytic sets. 
 Studying it provides us, next to some important results in areas such as descriptive set theory, probability theory and functional analysis with a deeper understanding of the way mathematics is done in practice.
 
-Our story starts in the Year 1905 with famous Frensch(!) mathematician Henri Lebesgue and his paper "Sur les fonctions représentables analytiquement" \cite{lebesgue1905}. 
+Our story starts in the Year 1905 with famous French mathematician Henri Lebesgue and his paper \textit{Sur les fonctions représentables analytiquement} \cite{lebesgue1905}. 
 In it, Lebesgue proved many statements of great importance. 
 He did however also include one small remark which stated, without proof, that the Borel sets are closed under projections. \\
 About 10 years later, Russian mathematician Nikolai Luzin ordered his student Mikhail Souslin to study Lebesgues paper. 
@@ -125,12 +125,17 @@ When the still very young Souslin returned, saying he had found an error in Lebe
 
 Soon after, Souslin, Luzin and Sierpinski would be the ones leading the charge on this young new field of mathematics that had just opened itself up to them \cite{rogers1980}. \\
 As Souslin had correctly identified, there was no justification of the claim that projections of Borel sets would again be Borel.
-In a short publication in the French Journal "Comptes Rendu" in 1917, Souslin annouced the falsity of Lebesgues statement and gave a rough sketch of his proof. [cite sur une ].
+In a short publication in the French Journal \textit{Comptes Rendu} in 1917, Souslin annouced the falsity of Lebesgues statement and gave a rough sketch of his proof. [cite sur une ].
 This meant that there was now a whole new class of sets waiting to be studied, namely those that arise as projections of Borel sets. We call these sets Analytic sets or, in honor of their discoverer, Souslin sets.\\
 A much more thorough treatments of the topic as well as the first construction of an Analytic set that is not Borel were later published by Luzin and Sierpinski after Souslins early death in 1919 [cite sur quelques proprietes\ldots], \cite{lusin1923} \cite{lusin1927}.
 
 It took until after the end of World War I for western mathematicians to start engaging with this new field. 
 But once they did, it quickly started to become apparent that Analytic sets were going to become a very important tool for many different areas of mathematics. \cite{Moschovakis1987} \cite{rogers1980}.
+
+Lebesgue Zitat:
+``l’origine de tous les problèmes dont il va s’agir ici est une
+grossière erreur de mon M´emoire\ldots Fructueuse erreur, que je fus bien inspiré de la
+commettre!'' [Dudley] [Lebesgue1930]
 
 This thesis aims to give an overview over some of the basic concepts, theorems and proofs in the field of Analytic sets. 
 In chapter 2, the basic notions and elementary proofs will be introduced. Chapter 3 will focus on the close similarities as well as differences between Analytic and Borel sets. Chapter 4 will provide some insights on the measure-theoretic properties and usefulness of Analytic sets and chaper 5 will explore some of the alternative constructions of Analytic sets and their uses. 
@@ -277,11 +282,11 @@ It now follows from \autoref{products}, that the cartesian product $\mathbb{N}^{
 
 
 
-Throughout the next few chapters, the space $\mathbb{N}^\mathbb{N}$ will show up
+Throughout the next few chapters, the space of integer sequences $\mathbb{N}^\mathbb{N}$ will show up
 over and over again. So it makes sense to devote a bit of time now to go over
 some of the important properties of that space.
 
-Another space that ist going to be important, is that of only the finite integer
+Another space that we will be seeing a few times, is that of only the finite integer
 sequences. 
 We will call this space $\mathbb{N}^{<\mathbb{N}}$
 
@@ -306,7 +311,7 @@ The metric we will be choosing for $\mathbb{N}^\mathbb{N}$ is the following:
 .\] 
 
 It is easy to see that the open Balls with radius $\varepsilon$ around an
-element $\alpha$ consist exactly of those sequences, that share the first $n$
+element $\alpha$ consist of those sequences, that share the first $n$
 terms with $\alpha$, where  $\frac{1}{2^n} < \varepsilon$. 
 But these are exactly the Basis elements of the Product topology we constructed
 earlier. 
@@ -382,19 +387,104 @@ This of course is a natural consequence of the way Analytic sets were discovered
 In some sense, Analytic sets are a just a generalization of the Borel sets which are closed under projections. 
 We will try to formalise this notion as well as some other results about these two classes of sets in this section.
 
+Since we will be taking a close look at Borel sets, let us begin by revisiting some of the necessary groundwork.
+
+\begin{definition}[$\sigma$-Algebra See\cite{srivastava1998}]
+	Let $X$ be a set. 
+	A collection  $\mathcal{A}$ of subsets of  $X$ is
+	called a  $\sigma$-Algebra, if it fulfills the
+	following conditions:\\
+	(1): $X \in \mathcal{A}$\\
+	(2): $A \in \mathcal{A} \implies A^C \in \mathcal{A}$\\
+	(3): $A_1,A_2,\ldots \in \mathcal{A} \implies
+	\bigcup_{n \in \mathbb{N}} A_n \in \mathcal{A}$ 
+\end{definition}
+
+Since $\bigcap_{n} A_n = \left( \bigcup_n A_n^C\right)^C $,
+$\mathcal{A}$ is also closed under countable intersections.
+
+
 \begin{definition}[Borel set]
 	We call a subset of a topological space Borel, if it is a member of $\mathcal{B}$, the $\sigma-$Algebra generated by the open sets.
 \end{definition}
 
-So any Borel set can be formed via taking countable unions, countable intersections and complements of Open sets.
+So any Borel set can be formed via a series of countable unions,
+countable intersections and complements of open sets.
 
+So far, our way of classifying Analytic sets as continuous
+images of Polish spaces has led to very easy and elegant
+proofs. 
+This following theorem is one, where a a different
+definition, such as that of Analytic sets being continuous
+images of Borel sets, or even Souslins original
+construction (See \autoref{constructions}), would have made the statement entirely
+obvious. 
 
 \begin{theorem}
+	\label{borel_cc_analytic}
 	Let $B$ be a Borel subset of a Polish space X. Then B is Analytic		
 \end{theorem}
+This will be made a lot easier to prove, if we first
+consider an alternative description of the Borel sets:
+\begin{lemma}
+	Let $X$ be a Hausdorff space, then
+	$\mathcal{B}\left( X \right) $ is the smallest
+	family of subsets of $X$ that\\
+	(1): contains the open and closed subsets of  $X$\\
+	(2): is closed under countable intersections\\
+	(3): is closed under countable disjoint unions
+\end{lemma}
 \begin{proof}
+	It is clear from the definition of
+	$\mathcal{B}\left( X \right) $, that it fulfills all
+	the conditions above. 
+
+	Let $\mathscr{S}$ be the smallest collection of
+	Subsets of $X$, for which (1)-(3) hold. 
+	Further, let  $\mathscr{S}_0 \coloneq \left\{ A \in
+	\mathscr{S}: A^c \in \mathscr{S} \right\} $, so the
+	largest subset of $\mathscr{S}$ that is closed under
+	the formation of complements. 
+	Since $\mathscr{S}_0 \subset \mathscr{S} \subset
+	\mathcal{B}(X)$, if we can show that $\mathscr{S}_0$ 
+	is a $\sigma$-Algebra contianing the open sets, we
+	would get  $\mathcal{B}\left( X \right) \subset
+	\mathscr{S}_0 $ and thus $\mathscr{S}_0 =
+	\mathscr{S} = \mathcal{B}\left(X \right) $.
+
+	We can already tell that  $\mathscr{S}_0$ contains
+	the open sets and is closed under formation of
+	complements. 
+	So only closure under countable unions remains to be
+	shown.
+	Let $\left( A_n \right)_{n \in  \mathbb{N}}$ be a
+	sequence of sets in $\mathscr{S}_0$.
+	We can easily turn  $\bigcup_n A_n $ into a disjoint
+	union, if instead of  $A_n$, we take  $\tilde{A}_n
+	\coloneq  A_n \cap
+	(\bigcap_{i \leq n-1} A_i^c)$.
+
+	Then $\bigcup A_n  = \bigcup \tilde{A}_n$ so  $\bigcup A_n \in \mathscr{S}$.
+	Further $\left( \bigcup A_n \right)^c = \bigcap
+	A_n^c $ which shows that $\bigcup A_n $ and $\left(
+	\bigcup A_n \right) ^c$ lie in $\mathscr{S}$ and
+	thus in  $\mathscr{S}_0$ as well. 
 	
+	Knowing now that $\mathscr{S}_0$ is a
+	$\sigma$-Algebra containing the open sets, we can
+	conclude
+	$\mathcal{B}\left( X \right) = \mathscr{S}_0$ is the
+	smallest family of subsets of $X$ fulfilling
+	conditions (1)-(3).
 \end{proof}
+With this shown, the proof of \autoref{borel_cc_analytic}
+becomes rather trivial. It suffices to observe that
+$\mathcal{A}\left( X \right)$ is a family of subsets that
+fulfills conditions (1)-(3) from the previous lemma [union,
+intersection of analytic sets is analytic noch in section 2
+beweisen] and thus
+has to contain the Borel sets.
+
 
 \begin{definition}[Zero-Dimensional space?]
 	We call a topological space zero-dimensional, if its topology has a basis that consists only of clopen sets.
@@ -588,7 +678,7 @@ paper.
 	Let $B$ be an Analytic subset of a Polish space $X$. Then $B$ is universally measurable.
 \end{theorem}
 \begin{proof}
-	
+	[Dudley?] 
 \end{proof}
 
 
@@ -615,24 +705,25 @@ paper.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\section{Alternative description}
-
+\section{Alternative constructions}
+\label{constructions}
 
 \subsection{Souslin operation}
 [Rogers, p.319 ?]
 
+
+\subsection{Trees}
+
 \subsection{Luzins construction ??}
 [Sur les ensembles analytiques]
 
-\subsection{MEINE FUCKING BÄUME ELIAAAAS!!!!!}
 
-
- \subsection{Projections}
-
+\subsection{Projections}
+[Srivastava p.127]
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\section{K-Analytic sets or Projective hierarchy. prettyprettyplease?}
+\section{K-Analytic sets or Projective hierarchy maybe?}
 
 
 
